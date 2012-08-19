@@ -1,0 +1,225 @@
+#bike {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  margin: 20px 0px;
+} 
+
+#bike div[id*="frame"] {  		
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  z-index: 2;
+-webkit-border-radius: 5px; 
+   -moz-border-radius: 5px; 
+        border-radius: 5px; 
+}
+
+#frametop {
+  width: 163px;
+  top: 20px;
+  left: 158px;
+}
+
+#framechainstay {
+  top: 131px;
+  left: 104px;
+  width: 85px;	
+}
+
+#framefork, #frameseattube {
+  top: 75px;
+  left: 270px;
+  width: 123px;
+
+  -webkit-transform: rotate(75deg);  
+  -moz-transform: rotate(75deg);  
+  -ms-transform: rotate(75deg);  
+   -o-transform: rotate(75deg);  
+      transform: rotate(75deg);
+}
+
+#frameseattube {
+  left: 112px;
+}
+
+
+#frameseatstay {
+  top: 78px;
+  left: 66px;
+  height: 6px !important;
+  width: 130px;
+
+  -webkit-transform: rotate(-65deg);  
+  -moz-transform: rotate(-65deg);  
+  -ms-transform: rotate(-65deg);  
+   -o-transform: rotate(-65deg);  
+      transform: rotate(-65deg);
+}
+
+#framedowntube {
+  width: 170px;
+  top: 78px;
+  left: 165px;
+
+  -webkit-transform: rotate(-40deg);  
+  -moz-transform: rotate(-40deg);  
+  -ms-transform: rotate(-40deg);  
+   -o-transform: rotate(-40deg);  
+      transform: rotate(-40deg);
+}
+
+#seat {
+  background-color:black;
+  position: absolute;
+  left: 135px;
+
+  z-index:3;
+  -webkit-border-radius: 20px; 
+  -moz-border-radius: 20px; 
+      border-radius: 20px; 
+}
+
+#base {
+  width: 30px;
+  height: 25px;
+}
+
+#nose {
+  background-color:black;
+  width: 40px;
+  height: 15px;
+  position:absolute;
+  top:0px;
+  left: 20px; 
+
+  -webkit-border-bottom-right-radius: 15px; 
+  -moz-border-bottom-right-radius: 15px; 
+      border-bottom-right-radius: 15px;   		
+}
+
+.handlebars {
+  position: relative;
+  left:310px;
+}
+
+#post {
+  background-color: silver;
+  height: 10px;
+  width: 10px;
+  position:absolute;
+  top: 10px;
+}
+
+#bar, #handle {
+  position:absolute;
+  top:5px;
+  width: 50px;
+  height: 10px;
+  background-color:silver;
+
+  -webkit-border-radius: 20px; 
+  -moz-border-radius: 20px; 
+      border-radius: 20px; 
+
+   -webkit-transform-origin: 0% 50%;  
+  -moz-transform-origin: 0% 50%;  
+  -ms-transform-origin: 0% 50%;  
+   -o-transform-origin: 0% 50%;  
+  transform-origin: 0% 50%;
+
+  -webkit-transform: rotate(-20deg);  
+  -moz-transform: rotate(-20deg);  
+  -ms-transform: rotate(-20deg);  
+   -o-transform: rotate(-20deg);  
+      transform: rotate(-20deg);
+}
+
+#handle {
+  background-color: black;
+  width: 25px;
+  height:12px;
+
+  -webkit-transform: rotate(-20deg) translateX(25px);  
+  -moz-transform: rotate(-20deg) translateX(25px);  
+  -ms-transform: rotate(-20deg) translateX(25px);  
+   -o-transform: rotate(-20deg) translateX(25px);  
+      transform: rotate(-20deg) translateX(25px);    
+}
+
+#backwheel, #frontwheel {
+  width: 120px;
+  height: 120px;
+  border: 8px solid black;
+  position: absolute;	
+  top: 68px;
+
+  -webkit-border-radius: 70px; 
+  -moz-border-radius: 70px; 
+      border-radius: 70px;   
+}
+
+#backwheel {
+  left: 35px;	
+}
+
+#frontwheel {
+  left: 278px;
+}
+
+div[class*="spoke"] {
+  height: 1px;
+  width: 62px;
+  background-color:black;
+  position:absolute;
+  top: 60px;
+
+  -webkit-transform-origin: 100% 50%;  
+  -moz-transform-origin: 100% 50%;  
+  -ms-transform-origin: 100% 50%;  
+   -o-transform-origin: 100% 50%;  
+  transform-origin: 100% 50%;
+}
+
+.center {
+  position: absolute;
+  top: 56px;
+  left: 58px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.spoke2 {
+  -webkit-transform: rotate(72deg);  
+  -moz-transform: rotate(72deg);  
+  -ms-transform: rotate(72deg);  
+   -o-transform: rotate(72deg);  
+      transform: rotate(72deg);
+}
+
+.spoke3 {
+  -webkit-transform: rotate(144deg);  
+  -moz-transform: rotate(144deg);  
+  -ms-transform: rotate(144deg);  
+   -o-transform: rotate(144deg);  
+      transform: rotate(144deg);
+}
+
+.spoke4 {
+  -webkit-transform: rotate(216deg);  
+  -moz-transform: rotate(216deg);  
+  -ms-transform: rotate(216deg);  
+   -o-transform: rotate(216deg);  
+      transform: rotate(216deg);
+}
+
+.spoke5 {
+  -webkit-transform: rotate(288deg);  
+  -moz-transform: rotate(288deg);  
+  -ms-transform: rotate(288deg);  
+   -o-transform: rotate(288deg);  
+      transform: rotate(288deg);
+}
+
