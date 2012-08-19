@@ -443,3 +443,5 @@ Small Device Styles
 .thumb {
   width:200px;
 }
+
+h2 { clear:both; }
