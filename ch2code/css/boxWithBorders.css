@@ -1,0 +1,13 @@
+.container {
+  position:relative;
+}
+
+.originalLocation { 
+  width: 146px;
+  height: 146px;
+  border: 2px dashed black; 
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2;
+}
