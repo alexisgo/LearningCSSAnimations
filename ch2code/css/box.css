@@ -1,16 +1,24 @@
-#box {
+.box {
   width: 150px;
   height: 150px;
-  background-color: blue;
+  background-color: lightgray;
   color:white;
+  margin: 100px 0;
 }
 
-#box h1 {
-  padding: 50px 0px 0px 30px;
-  margin: 40px 0;
+.box h1 {
+  padding: 50px 0 0 30px;
 }
 
-.rotate {
+#rotate {
+  -webkit-transform: rotate(15deg);  
+     -moz-transform: rotate(15deg);  
+      -ms-transform: rotate(15deg);  
+       -o-transform: rotate(15deg);  
+  	 transform: rotate(15deg);
+}
+
+#rotateFromBottomCorner {
   -webkit-transform-origin: 0% 100%;  
      -moz-transform-origin: 0% 100%;  
       -ms-transform-origin: 0% 100%;  
@@ -24,10 +32,34 @@
   	 transform: rotate(15deg);
 }
 
-.scale {
+#scale {
   -webkit-transform: scale(1.0, 1.5);  
      -moz-transform: scale(1.0, 1.5);  
       -ms-transform: scale(1.0, 1.5);  
        -o-transform: scale(1.0, 1.5);  
           transform: scale(1.0, 1.5);
 }
+
+#skew {
+  -webkit-transform: skewX(50deg);  
+     -moz-transform: skewX(50deg);  
+      -ms-transform: skewX(50deg);  
+       -o-transform: skewX(50deg);  
+          transform: skewX(50deg);
+}
+
+#skewAndScale {
+  -webkit-transform: skewX(50deg) scale(0.5);  
+     -moz-transform: skewX(50deg) scale(0.5);  
+      -ms-transform: skewX(50deg) scale(0.5);  
+       -o-transform: skewX(50deg) scale(0.5);  
+          transform: skewX(50deg) scale(0.5);
+}
+
+#translate {
+  -webkit-transform: translateX(400px);  
+     -moz-transform: translateX(400px);  
+      -ms-transform: translateX(400px);  
+       -o-transform: translateX(400px);  
+ 	 transform: translateX(400px);
+}  
