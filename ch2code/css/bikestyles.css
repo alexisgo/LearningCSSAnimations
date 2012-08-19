@@ -175,9 +175,9 @@
   position: absolute;	
   top: 68px;
 
-  -webkit-border-radius: 70px; 
-  -moz-border-radius: 70px; 
-      border-radius: 70px;   
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+      border-radius: 50%;   
 }
 
 #backwheel {
