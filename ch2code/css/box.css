@@ -1,3 +1,15 @@
+/* If CSS3 Transforms are supported
+ do not display the browser warning*/
+.csstransforms #unsupported {
+  display:none;
+}
+
+/* If CSS3 Transforms are NOT supported
+ display the browser warning*/
+.no-csstransforms #unsupported {
+  display:block;
+}
+
 .box {
   width: 150px;
   height: 150px;
