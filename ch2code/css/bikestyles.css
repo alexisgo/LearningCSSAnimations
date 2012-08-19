@@ -10,6 +10,15 @@
   display:block;
 }
 
+.no-csstransforms #unsupported img {
+  border: 2px solid black;
+}
+
+/* hide bike if CSS3 transforms are not supported */
+.no-csstransforms #unsupported {
+  display:none;
+}
+
 #bike {
   width: 400px;
   height: 250px;
