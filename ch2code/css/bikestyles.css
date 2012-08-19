@@ -15,7 +15,7 @@
 }
 
 /* hide bike if CSS3 transforms are not supported */
-.no-csstransforms #unsupported {
+.no-csstransforms #bike {
   display:none;
 }
 
