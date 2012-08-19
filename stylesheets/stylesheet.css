@@ -429,3 +429,13 @@ Small Device Styles
   }
 
 }
+
+.alignright {
+ float:right;
+ padding-left:10px;
+}
+
+.alignleft {
+ float:left;
+ padding-right:10px;
+}
