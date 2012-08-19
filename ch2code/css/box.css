@@ -10,7 +10,7 @@
   display:block;
 }
 
-.box {
+.box {1
   width: 150px;
   height: 150px;
   background-color: rgb(211,211,211);
@@ -45,11 +45,11 @@
 }
 
 #scale {
-  -webkit-transform: scale(1.0, 1.5);  
-     -moz-transform: scale(1.0, 1.5);  
-      -ms-transform: scale(1.0, 1.5);  
-       -o-transform: scale(1.0, 1.5);  
-          transform: scale(1.0, 1.5);
+  -webkit-transform: scale(1, 1.5);  
+     -moz-transform: scale(1, 1.5);  
+      -ms-transform: scale(1, 1.5);  
+       -o-transform: scale(1, 1.5);  
+          transform: scale(1, 1.5);
 }
 
 #skew {
