@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>CUBE!</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cube.css">
+    <!-- modernizr version that contains the prefixed() method -->
+    <script type="text/javascript" src="js/modernizr.custom.57498.js"></script>    
+</head>
+<body>
+  <div id="stage">
+     <div id="cube" >
+       <div id="cubetop"></div>
+       <div id="cubeleft"></div>
+       <div id="cuberight"></div>
+       <div id="cubebottom"></div>
+       <div id="cubeleft"></div>
+       <div id="cubefront"></div>
+       <div id="cubeback"></div>
+     </div>
+     <section id="xslider">
+       <input  name="range" id="slider" type="range" min="0" max="360" step="36" value="0"/>  
+       <label for="slider">X: </label>
+       <span id="xdegrees">0</span>
+     </section>
+     <section id="yslider">
+       <input type="range" id="verticalslider" min="0" max="360" step="36" value="0" />
+       <br>
+       <label for="verticalslider">Y: </label>
+       <span id="ydegrees">0</span>
+     </section>
+     <section id="zslider">
+       <input type="range" id="nearnessslider" min="0" max="360" step="36" value="0" />
+       <label for="zslider">Z: </label>
+       <span id="zdegrees">0</span>
+     </section>
+  </div>
+  
+  <script type="text/javascript" src="js/cube.js"></script>
+  
+</body>
+</html>
