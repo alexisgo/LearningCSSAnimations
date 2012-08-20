@@ -204,10 +204,10 @@ div[class*="spoke"] {
 
 .center {
   position: absolute;
-  top: 56px;
-  left: 58px;
-  width: 10px;
-  height: 10px;
+  top: 48%;
+  left: 49%;
+  width: 4%;
+  height: 4%;
   border-radius: 5px;
   background-color: black;
 }
