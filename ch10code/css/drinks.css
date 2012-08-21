@@ -1,0 +1,366 @@
+body { background-color:lightblue; font-family: 'Shadows Into Light Two', cursive; }
+h1 { 
+  font-family: 'Righteous', cursive; font-size:2.5em;
+  margin: 0 -8px 8px -8px;
+  text-align:center;
+  background-color:white;
+
+	-webkit-box-shadow: 0 -4px 0 12px white, 0px 1px 20px 1px black;
+	box-shadow: 
+    0 -4px 0 12px white, 
+    0px 1px 20px 1px black;
+}
+
+#bar {
+  background-color:rgb(233,236,236);
+  width: 800px;
+  height:700px;
+  margin: -8px auto;
+  padding:20px;
+  border-radius:10px;
+  position:relative;
+}
+
+#bar section {  width:110px; position:absolute; margin-left:100px; padding-top:20px;}
+#bar section h2 { 
+  font-size:1.1em;
+  margin:5px 0;
+  text-align:center;
+}
+
+#bar #sources {
+  background-color:gray;
+  top:650px;
+  width: 800px;
+  margin-left: -20px;
+  padding:20px;
+  color:white;
+}
+
+#bar #sources a { 
+  color:white; 
+}
+
+.tumbler {
+  width:100px;
+  height:200px;
+  border: 8px solid #336;
+  border-width: 0 6px 6px 6px;
+  border-color: white black black black;
+
+  border-bottom-right-radius: 20px 30px;
+  border-bottom-left-radius: 20px 30px;
+  
+  position:relative;
+  overflow:hidden;
+}
+
+/* to round the corners ONLY of the first 
+ingredient*/
+.tumbler div:nth-of-type(1) p {
+  border-bottom-right-radius: 15px 20px;
+  border-bottom-left-radius: 15px 20px; 
+}
+
+.tumbler div { width:100px; position:absolute; }
+
+/* -- SHARED ANIMATIONS -- */        
+@-webkit-keyframes rise {
+  0% { height:0%;}
+  100% { height:100%; }
+
+}
+
+@-moz-keyframes rise {
+  0% { height:0%;}
+  100% { height:100%; }
+}
+
+@-ms-keyframes rise {
+  0% { height:0%;}
+  100% { height:100%; }
+}
+
+@-o-keyframes rise {
+  0% { height:0%;}
+  100% { height:100%; }
+}
+
+@keyframes rise {
+  0% { height:0%;}
+  100% { height:100%; }
+
+}
+
+/* INGREDIENT FADE IN */
+@-webkit-keyframes ingredientFadeIn {
+  0% { color:transparent;}
+  100% { }
+
+}
+
+@-moz-keyframes ingredientFadeIn {
+  0% { color:transparent;}
+  100% { }
+
+}
+
+@-ms-keyframes ingredientFadeIn {
+  0% { color:transparent;}
+  100% { }
+}
+
+@-o-keyframes ingredientFadeIn {
+  0% { color:transparent;}
+  100% { }
+}
+
+@keyframes ingredientFadeIn {
+  0% { color:transparent;}
+  100% { }
+
+}
+
+.tumbler div p {
+  font-family: 'Righteous', cursive;
+  width:100%;
+  height:100%;  
+  margin:0 auto;
+  /* place inner element right at bottom of outer div.
+  this ensures changes move bottom to top, not
+  top to bottom */
+  position:absolute;
+  bottom:0%;            
+  text-align:center;
+  -webkit-animation: rise 2s both ease-out;
+  -moz-animation: rise 2s both ease-out;
+  -ms-animation: rise 2s both ease-out;
+  -o-animation: rise 2s both ease-out;
+  animation: rise 2s both ease-out;
+
+}
+
+.tumbler div p strong { 
+  font-size:0.9em;
+  -webkit-animation: ingredientFadeIn 1s 2s both;
+  -moz-animation: ingredientFadeIn 1s 2s both;
+  -ms-animation: ingredientFadeIn 1s 2s both;
+  -o-animation: ingredientFadeIn 1s 2s both;
+  animation: ingredientFadeIn 1s 2s both;
+
+}
+
+/* -- RUM AND COKE -- */    
+#rum { height:20%; bottom:0%; }
+#rum p {  background-color:rgb(235,191,0);}
+
+#rumncoke { }
+
+@-webkit-keyframes coke {
+  0% { bottom: -40%;}
+  100% { bottom:20%; }
+}
+
+#coke {
+  /* assign height, initial position*/
+  height:40%;
+  bottom:20%;      
+}
+#coke p {
+  background-color:rgb(151,95,55);  
+  color:white;    
+  /* now this delay is applied to BOTH rise and ingredient fade in, 
+  so the fade in and rise happen at the same time for the Coke hmmmm */
+  -webkit-animation-delay:3s;
+  -moz-animation-delay:3s;
+  -ms-animation-delay:3s;
+  -o-animation-delay:3s;
+  animation-delay:3s;
+
+}
+
+#coke p strong {
+  -webkit-animation-delay:5s;
+  -moz-animation-delay:5s;
+  -ms-animation-delay:5s;
+  -o-animation-delay:5s;
+  animation-delay:5s;
+
+}
+
+/* -- TOM COLLINS -- */
+#tomcollins { left: 250px; }
+#tcGin {
+  bottom:0;
+  height:20%;
+}
+#tcGin p {
+  border-top:2px solid rgba(0,0,0,.3);
+  background-color:rgb(231,255,255);
+}
+
+#tcClubSoda {
+  bottom: 21%;
+  height: 30%;
+}
+
+#tcClubSoda p {
+  background-color:white;
+  -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  -ms-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay:2s;
+
+}
+#tcClubSoda p strong {
+  -webkit-animation-delay:4s;
+  -moz-animation-delay:4s;
+  -ms-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
+
+}
+
+#tcLemon { bottom: 51%; height:10%;}
+#tcLemon p {
+  background-color:yellow;
+  -webkit-animation-delay:4s;
+  -moz-animation-delay:4s;
+  -ms-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
+
+}
+#tcLemon p strong {
+  -webkit-animation-delay:6s;
+  -moz-animation-delay:6s;
+  -ms-animation-delay:6s;
+  -o-animation-delay:6s;
+  animation-delay:6s;
+
+}
+
+/* -- GIN & TONIC -- */    
+#ginntonic {
+  left: 500px;
+}
+
+#gtGin { height: 20%; bottom:0;}
+#gtGin p { border-top:2px solid rgba(0,0,0,.3); background-color:rgb(231,255,255);  }
+
+#gtTonic { height: 50%; bottom:21%;}
+#gtTonic p {
+  background-color:rgb(230,230,206);
+  -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  -ms-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay:2s;
+
+}
+#gtTonic p strong {
+  -webkit-animation-delay:4s;
+  -moz-animation-delay:4s;
+  -ms-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
+
+}
+/* -- REDBULL & VODKA -- */    
+#redbullVodka {
+  top: 350px;
+  left:250px;
+}
+#rbVodka {height: 20%; bottom:0;}
+#rbVodka p { border-top:2px solid rgba(0,0,0,.3); background-color: rgb(204,204,204); }
+
+#redbull {height: 60%; bottom:21%;}
+#redbull p {  
+  background-color:rgb(235,191,0);
+  -webkit-animation-delay:2s;  
+}
+#redbull p strong {  
+  -webkit-animation-delay:4s;  
+}
+
+/* -- BLOODY MARY -- */    
+#bloodyMary { top: 350px;}
+
+#bmVodka {height: 20%; bottom:0;}
+#bmVodka p { border-top:2px solid rgba(0,0,0,.3); background-color: rgb(204,204,204); }
+
+#bmTomatoJuice {height: 60%; bottom:21%;}
+#bmTomatoJuice p { 
+  background-color:red;
+  color:white;
+  -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  -ms-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay:2s;
+
+}
+#bmTomatoJuice p strong { 
+  -webkit-animation-delay:4s;
+  -moz-animation-delay:4s;
+  -ms-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
+
+}
+
+#bmLemonJuice {height: 10%; bottom:81%;}
+#bmLemonJuice p { 
+  background-color:yellow;
+  -webkit-animation-delay:4s;
+  -moz-animation-delay:4s;
+  -ms-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
+
+}
+#bmLemonJuice p strong { 
+  -webkit-animation-delay:6s;
+  -moz-animation-delay:6s;
+  -ms-animation-delay:6s;
+  -o-animation-delay:6s;
+  animation-delay:6s;
+}
+
+/*-- whiskey sour --*/
+#whiskeySour { top: 350px; left: 500px; }
+#wsWhiskey { height: 30%; bottom:0;}
+#wsWhiskey p { background-color: rgb(217,177,89);}
+#wsLemonJuice { height: 20%; bottom:30%;}
+#wsLemonJuice p {
+  background-color: yellow;
+  -webkit-animation-delay:2s;
+}
+#wsLemonJuice p strong {
+  -webkit-animation-delay:4s;
+  -moz-animation-delay:4s;
+  -ms-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
+
+}
+#wsGomme {  height: 10%; bottom:50%;}
+#wsGomme p {
+  background-color: rgb(224,226,153); 
+  -webkit-animation-delay:4s;
+  -moz-animation-delay:4s;
+  -ms-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
+
+}
+#wsGomme p strong {
+  -webkit-animation-delay:6s;
+  -moz-animation-delay:6s;
+  -ms-animation-delay:6s;
+  -o-animation-delay:6s;
+  animation-delay:6s;
+
+}
+
