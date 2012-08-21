@@ -15,22 +15,19 @@
 				66% { background-color: rgb(105,105,105); /*darkgray*/; }
 				100% { background-color: gray; }
 			}
-
 			@-moz-keyframes rangeOfGrays {
 				0% { background-color: black; }
 				33% { background-color: rgb(211,211,211); }
 				66% { background-color: rgb(105,105,105); /*darkgray*/; }
 				100% { background-color: gray; }
 			}
-
-			@-ms-keyframes rangeOfGrays {
+			@-o-keyframes rangeOfGrays {
 				0% { background-color: black; }
 				33% { background-color: rgb(211,211,211); }
 				66% { background-color: rgb(105,105,105); /*darkgray*/; }
 				100% { background-color: gray; }
 			}
-
-			@-o-keyframes rangeOfGrays {
+			@keyframes rangeOfGrays {
 				0% { background-color: black; }
 				33% { background-color: rgb(211,211,211); }
 				66% { background-color: rgb(105,105,105); /*darkgray*/; }
@@ -46,16 +43,16 @@
 			             direction, fill mode */
 			-webkit-animation: rangeOfGrays 5s linear 0s 2 alternate forwards;
 			-moz-animation: rangeOfGrays 5s linear 0s 2 alternate forwards;
-			-ms-animation: rangeOfGrays 5s linear 0s 2 alternate forwards;
 			-o-animation: rangeOfGrays 5s linear 0s 2 alternate forwards;			
+			animation: rangeOfGrays 5s linear 0s 2 alternate forwards;
 		}
 		
 		/* pause the animation when you hover over it*/
 		#animation:hover {
 			-webkit-animation-play-state:paused;
 	  	-moz-animation-play-state:paused;
-			-ms-animation-play-state:paused;
 			-o-animation-play-state:paused;
+			animation-play-state:paused;
 		}
 		</style>
 		

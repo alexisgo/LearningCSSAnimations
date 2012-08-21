@@ -15,22 +15,19 @@
 			66% { background-color: rgb(105,105,105); /*darkgray*/; }
 			100% { background-color: gray; }
 		}
-
 		@-moz-keyframes rangeOfGrays {
 			0% { background-color: black; }
 			33% { background-color: rgb(211,211,211); }
 			66% { background-color: rgb(105,105,105); /*darkgray*/; }
 			100% { background-color: gray; }
 		}
-
-		@-ms-keyframes rangeOfGrays {
+		@-o-keyframes rangeOfGrays {
 			0% { background-color: black; }
 			33% { background-color: rgb(211,211,211); }
 			66% { background-color: rgb(105,105,105); /*darkgray*/; }
 			100% { background-color: gray; }
 		}
-
-		@-o-keyframes rangeOfGrays {
+		@keyframes rangeOfGrays {
 			0% { background-color: black; }
 			33% { background-color: rgb(211,211,211); }
 			66% { background-color: rgb(105,105,105); /*darkgray*/; }
@@ -44,23 +41,23 @@
 			
 			-webkit-animation-name: rangeOfGrays;
 			-moz-animation-name: rangeOfGrays;
-			-ms-name: rangeOfGrays;
-			-o-name: rangeOfGrays;
-			
+			-o-animation-name: rangeOfGrays;
+			animation-name: rangeOfGrays;
+						
 			-webkit-animation-duration: 5s;
 			-moz-animation-duration: 5s;
-			-ms-animation-duration: 5s;
 			-o-animation-duration: 5s;
+			animation-duration: 5s;
 			
 			-webkit-animation-fill-mode: forwards;
 			-moz-animation-fill-mode: forwards;
-			-ms-animation-fill-mode: forwards;
 			-o-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
 
 			-webkit-animation-direction: alternate;
 			-moz-animation-direction: alternate;
-			-ms-animation-direction: alternate;
 			-o-animation-direction: alternate;
+			animation-direction: alternate;
 			
 		}
 		</style>

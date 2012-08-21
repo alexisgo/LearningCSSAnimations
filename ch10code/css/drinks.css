@@ -28,7 +28,7 @@ h1 {
   text-align:center;
 }
 
-#bar #sources {
+#sources {
   background-color:gray;
   top:650px;
   width: 800px;
@@ -37,7 +37,7 @@ h1 {
   color:white;
 }
 
-#bar #sources a { 
+#sources a { 
   color:white; 
 }
 
@@ -66,28 +66,28 @@ ingredient*/
 
 /* -- SHARED ANIMATIONS -- */        
 @-webkit-keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
 
 }
 
 @-moz-keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
 }
 
 @-ms-keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
 }
 
 @-o-keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
 }
 
 @keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
 
 }
@@ -130,7 +130,7 @@ ingredient*/
   this ensures changes move bottom to top, not
   top to bottom */
   position:absolute;
-  bottom:0%;            
+  bottom:0;            
   text-align:center;
   -webkit-animation: rise 2s both ease-out;
   -moz-animation: rise 2s both ease-out;
@@ -151,7 +151,7 @@ ingredient*/
 }
 
 /* -- RUM AND COKE -- */    
-#rum { height:20%; bottom:0%; }
+#rum { height:20%; bottom:0; }
 #rum p {  background-color:rgb(235,191,0);}
 
 #rumncoke { }
@@ -169,8 +169,6 @@ ingredient*/
 #coke p {
   background-color:rgb(151,95,55);  
   color:white;    
-  /* now this delay is applied to BOTH rise and ingredient fade in, 
-  so the fade in and rise happen at the same time for the Coke hmmmm */
   -webkit-animation-delay:3s;
   -moz-animation-delay:3s;
   -ms-animation-delay:3s;

@@ -6,47 +6,12 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>spring</title>
+		<link rel="stylesheet" href="css/spring.css">
     <script type="text/javascript" src="js/modernizr.custom.57498.js"></script>
-
-		<style>
-		@-webkit-keyframes spring {
-			0% { -webkit-transform: scale(1); }
-			30% { -webkit-transform: scale(1, 0.5); }
-			/* quickly snaps back, longer than before */
-			40% { -webkit-transform: scale(1, 1.5); }
-			/* compresses in again */
-			50% { -webkit-transform: scale(1, 0.7);}
-			/* stretches out */
-			61% { -webkit-transform: scale(1, 1.4);}
-			/* compress */
-			72% { -webkit-transform: scale(1, 0.8);	}
-			/*stretch*/
-			83% { -webkit-transform: scale(1, 1.2); }
-			100% { -webkit-transform: scale(1);}
-		}
-		#container {
-			width: 50%;
-			margin: 40px auto;
-		}
-		#spring {
-			background-image: url('img/spring.png');
-			width:50px;
-			height:182px;
-			
-			-webkit-animation: spring 2.8s;
-			-moz-animation: spring 2.8s;
-			-ms-animation: spring 2.8s;
-			-o-animation: spring 2.8s;
-			
-			/* makes the final keyframe stick
-			-webkit-animation-fill-mode: forwards;*/
-		}
-	</style>
 	</head>
 	<body>
 		<div id="container">
 			<div id="spring"></div>	
-		</div>
-		
+		</div>		
 	</body>
 </html>

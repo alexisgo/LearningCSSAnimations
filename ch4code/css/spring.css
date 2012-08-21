@@ -1,0 +1,195 @@
+#container {
+  width: 50%;
+  margin: 40px auto;
+}
+#spring {
+  background-image: url('img/spring.png');
+  width:50px;
+  height:182px;
+
+  -webkit-animation: spring 2.8s;
+  -moz-animation: spring 2.8s;
+  -o-animation: spring 2.8s;
+  animation: spring 2.8s;
+
+  /* makes the final keyframe stick
+  -webkit-animation-fill-mode: forwards;*/
+}
+
+@-webkit-keyframes spring {
+	0% { -webkit-transform: scale(1); }
+	30% { -webkit-transform: scale(1, 0.5); }
+	/* quickly snaps back, longer than before */
+	40% { -webkit-transform: scale(1, 1.5); }
+	/* compresses in again */
+	50% { -webkit-transform: scale(1, 0.7);}
+	/* stretches out */
+	61% { -webkit-transform: scale(1, 1.4);}
+	/* compress */
+	72% { -webkit-transform: scale(1, 0.8);	}
+	/*stretch*/
+	83% { -webkit-transform: scale(1, 1.2); }
+	100% { -webkit-transform: scale(1);}
+}
+/* additional prefixes generated with http://prefixr.com/ */
+@-moz-keyframes spring {
+ 0% {
+   -moz-transform: scale(1);
+   transform: scale(1);
+ }
+ 30% {
+   -moz-transform: scale(1, 0.5);
+   transform: scale(1, 0.5);
+ }
+
+/* quickly snaps back, longer than before */
+ 40% {
+   -moz-transform: scale(1, 1.5);
+   transform: scale(1, 1.5);
+ }
+
+/* compresses in again */
+ 50% {
+   -moz-transform: scale(1, 0.7);
+   transform: scale(1, 0.7);
+ }
+
+/* stretches out */
+ 61% {
+   -moz-transform: scale(1, 1.4);
+   transform: scale(1, 1.4);
+ }
+
+/* compress */
+ 72% {
+   -moz-transform: scale(1, 0.8);
+   transform: scale(1, 0.8);
+ }
+
+/*stretch*/
+ 83% {
+   -moz-transform: scale(1, 1.2);
+   transform: scale(1, 1.2);
+ }
+ 100% {
+   -moz-transform: scale(1);
+   transform: scale(1);
+ }
+
+}
+
+
+@-o-keyframes "spring" {
+ 0% {
+   -o-transform: scale(1);
+   transform: scale(1);
+ }
+ 30% {
+   -o-transform: scale(1, 0.5);
+   transform: scale(1, 0.5);
+ }
+
+/* quickly snaps back, longer than before */
+ 40% {
+   -o-transform: scale(1, 1.5);
+   transform: scale(1, 1.5);
+ }
+
+/* compresses in again */
+ 50% {
+   -o-transform: scale(1, 0.7);
+   transform: scale(1, 0.7);
+ }
+
+/* stretches out */
+ 61% {
+   -o-transform: scale(1, 1.4);
+   transform: scale(1, 1.4);
+ }
+
+/* compress */
+ 72% {
+   -o-transform: scale(1, 0.8);
+   transform: scale(1, 0.8);
+ }
+
+/*stretch*/
+ 83% {
+   -o-transform: scale(1, 1.2);
+   transform: scale(1, 1.2);
+ }
+ 100% {
+   -o-transform: scale(1);
+   transform: scale(1);
+ }
+
+}
+
+@keyframes "spring" {
+ 0% {
+    -webkit-transform: scale(1);
+   	-moz-transform: scale(1);
+   	-o-transform: scale(1);
+   	-ms-transform: scale(1);
+   	transform: scale(1);
+ }
+ 30% {
+    -webkit-transform: scale(1, 0.5);
+   	-moz-transform: scale(1, 0.5);
+   	-o-transform: scale(1, 0.5);
+   	-ms-transform: scale(1, 0.5);
+   	transform: scale(1, 0.5);
+ }
+
+/* quickly snaps back, longer than before */
+ 40% {
+    -webkit-transform: scale(1, 1.5);
+   	-moz-transform: scale(1, 1.5);
+   	-o-transform: scale(1, 1.5);
+   	-ms-transform: scale(1, 1.5);
+   	transform: scale(1, 1.5);
+ }
+
+/* compresses in again */
+ 50% {
+    -webkit-transform: scale(1, 0.7);
+   	-moz-transform: scale(1, 0.7);
+   	-o-transform: scale(1, 0.7);
+   	-ms-transform: scale(1, 0.7);
+   	transform: scale(1, 0.7);
+ }
+
+/* stretches out */
+ 61% {
+    -webkit-transform: scale(1, 1.4);
+   	-moz-transform: scale(1, 1.4);
+   	-o-transform: scale(1, 1.4);
+   	-ms-transform: scale(1, 1.4);
+   	transform: scale(1, 1.4);
+ }
+
+/* compress */
+ 72% {
+    -webkit-transform: scale(1, 0.8);
+   	-moz-transform: scale(1, 0.8);
+   	-o-transform: scale(1, 0.8);
+   	-ms-transform: scale(1, 0.8);
+   	transform: scale(1, 0.8);
+ }
+
+/*stretch*/
+ 83% {
+    -webkit-transform: scale(1, 1.2);
+   	-moz-transform: scale(1, 1.2);
+   	-o-transform: scale(1, 1.2);
+   	-ms-transform: scale(1, 1.2);
+   	transform: scale(1, 1.2);
+ }
+ 100% {
+    -webkit-transform: scale(1);
+   	-moz-transform: scale(1);
+   	-o-transform: scale(1);
+   	-ms-transform: scale(1);
+   	transform: scale(1);
+ }
+}

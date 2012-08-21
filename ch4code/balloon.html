@@ -10,7 +10,6 @@
     <script type="text/javascript" src="js/modernizr.custom.57498.js"></script>
     <link rel="stylesheet" href="css/base.css">
 <style>
-
 @-webkit-keyframes float-lr {
 	0%, 40%, 80% { left: -100px; }
 	20%, 60%, 100% { left: 100px;}
@@ -19,11 +18,11 @@
 	0%, 40%, 80% { left: -100px; }
 	20%, 60%, 100% { left: 100px;}
 }
-@-ms-keyframes float-lr {
+@-o-keyframes float-lr {
 	0%, 40%, 80% { left: -100px; }
 	20%, 60%, 100% { left: 100px;}
 }
-@-o-keyframes float-lr {
+@keyframes float-lr {
 	0%, 40%, 80% { left: -100px; }
 	20%, 60%, 100% { left: 100px;}
 }
@@ -35,7 +34,6 @@
 	96% { top: 0px}
 	98% { top:5px;}
 	100% { top: 0px;}
-
 }
 
 @-moz-keyframes float-up {
@@ -45,17 +43,6 @@
 	96% { top: 0px}
 	98% { top:5px;}
 	100% { top: 0px;}
-
-}
-
-@-ms-keyframes float-up {
-	0% { top: 200px; }
-	88% { top: 0px;}
-	92% { top:10px;}
-	96% { top: 0px}
-	98% { top:5px;}
-	100% { top: 0px;}
-
 }
 
 @-o-keyframes float-up {
@@ -65,7 +52,14 @@
 	96% { top: 0px}
 	98% { top:5px;}
 	100% { top: 0px;}
-
+}
+@keyframes float-up {
+	0% { top: 200px; }
+	86% { top: 0px;}
+	90% { top:10px;}
+	96% { top: 0px}
+	98% { top:5px;}
+	100% { top: 0px;}
 }
 
 @-webkit-keyframes wobble {
@@ -78,12 +72,12 @@
 	20%, 60% { -moz-transform: rotate(-4deg);}
 	100% { }
 }
-@-ms-keyframes wobble {
-	0%, 40%, 80% { -ms-transform: rotate(4deg);}
-	20%, 60% { -ms-transform: rotate(-4deg);}
+@-o-keyframes wobble {
+	0%, 40%, 80% { transform: rotate(4deg);}
+	20%, 60% { transform: rotate(-4deg);}
 	100% { }
 }
-@-o-keyframes wobble {
+@keyframes wobble {
 	0%, 40%, 80% { transform: rotate(4deg);}
 	20%, 60% { transform: rotate(-4deg);}
 	100% { }
@@ -100,12 +94,13 @@
   -moz-animation: float-up 10s ease-in-out forwards, 
 	    float-lr 10s ease-in-out forwards, 
 	    wobble 10s ease-in-out forwards;
-  -ms-animation: float-up 10s ease-in-out forwards, 
-	    float-lr 10s ease-in-out forwards, 
-	    wobble 10s ease-in-out forwards;
   -o-animation: float-up 10s ease-in-out forwards, 
 	    float-lr 10s ease-in-out forwards, 
 	    wobble 10s ease-in-out forwards;
+  animation: float-up 10s ease-in-out forwards, 
+  	    float-lr 10s ease-in-out forwards, 
+  	    wobble 10s ease-in-out forwards;
+
 }
 
 #balloon 
