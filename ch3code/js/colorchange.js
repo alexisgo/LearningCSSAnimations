@@ -2,10 +2,10 @@ var elem = document.getElementById("animateMe");
 elem.addEventListener("click", transition, false);
 
 function transition() {
-  if (this.className) {
-    this.className = "";		
+  if (this.className == "purple") {
+    this.className = "blue";		
   }
-  else {
-    this.className = "colorchange";
+  else if (this.className == "blue"){
+    this.className = "purple";
   }
 }
