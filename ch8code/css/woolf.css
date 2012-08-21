@@ -1,0 +1,514 @@
+/* TO DO: SET A MINIMUM WIDTH so the words don't get pushed down if the window isn't wide enough */
+
+/* -- Set up Basic Styles -- */
+body { 
+  background-color:#D3D3D3;
+  font-family: '1942report1942report', sans-serif;
+}
+
+#container { position:relative;}
+
+#roller {
+  width:100%;
+  height:80px;
+  position:absolute;
+  bottom: 0px;
+
+  background: rgb(66,65,65); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(66,65,65,1) 0%, rgba(66,65,65,1) 6%, rgba(109,108,108,1) 38%, rgba(234,232,232,1) 50%, rgba(109,108,108,1) 64%, rgba(66,65,65,1) 94%, rgba(66,65,65,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(66,65,65,1)), color-stop(6%,rgba(66,65,65,1)), color-stop(38%,rgba(109,108,108,1)), color-stop(50%,rgba(234,232,232,1)), color-stop(64%,rgba(109,108,108,1)), color-stop(94%,rgba(66,65,65,1)), color-stop(100%,rgba(66,65,65,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(66,65,65,1) 0%,rgba(66,65,65,1) 6%,rgba(109,108,108,1) 38%,rgba(234,232,232,1) 50%,rgba(109,108,108,1) 64%,rgba(66,65,65,1) 94%,rgba(66,65,65,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(66,65,65,1) 0%,rgba(66,65,65,1) 6%,rgba(109,108,108,1) 38%,rgba(234,232,232,1) 50%,rgba(109,108,108,1) 64%,rgba(66,65,65,1) 94%,rgba(66,65,65,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(66,65,65,1) 0%,rgba(66,65,65,1) 6%,rgba(109,108,108,1) 38%,rgba(234,232,232,1) 50%,rgba(109,108,108,1) 64%,rgba(66,65,65,1) 94%,rgba(66,65,65,1) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(66,65,65,1) 0%,rgba(66,65,65,1) 6%,rgba(109,108,108,1) 38%,rgba(234,232,232,1) 50%,rgba(109,108,108,1) 64%,rgba(66,65,65,1) 94%,rgba(66,65,65,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424141', endColorstr='#424141',GradientType=0 ); /* IE6-9 */
+}
+
+#paper { 
+  width: 85%;
+  margin:0 auto; 
+  height: 500px;
+  padding-bottom: 25px;
+  overflow: hidden;
+  position:relative;
+
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(249,247,247,1) 88%, rgba(249,248,247,1) 92%, rgba(239,233,222,1) 97%, rgba(219,215,210,1) 99%, rgba(211,207,201,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(88%,rgba(249,247,247,1)), color-stop(92%,rgba(249,248,247,1)), color-stop(97%,rgba(239,233,222,1)), color-stop(99%,rgba(219,215,210,1)), color-stop(100%,rgba(211,207,201,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(249,247,247,1) 88%,rgba(249,248,247,1) 92%,rgba(239,233,222,1) 97%,rgba(219,215,210,1) 99%,rgba(211,207,201,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(249,247,247,1) 88%,rgba(249,248,247,1) 92%,rgba(239,233,222,1) 97%,rgba(219,215,210,1) 99%,rgba(211,207,201,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(249,247,247,1) 88%,rgba(249,248,247,1) 92%,rgba(239,233,222,1) 97%,rgba(219,215,210,1) 99%,rgba(211,207,201,1) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(249,247,247,1) 88%,rgba(249,248,247,1) 92%,rgba(239,233,222,1) 97%,rgba(219,215,210,1) 99%,rgba(211,207,201,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3cfc9',GradientType=0 ); /* IE6-9 */
+
+  -webkit-border-bottom-right-radius: 5px 20px;
+  -moz-border-radius-bottomright:5px 20px;
+  border-bottom-right-radius: 5px 20px;
+
+  -webkit-border-bottom-left-radius: 5px 12px;
+  -moz-border-radius-bottomleft:5px 12px;
+  border-bottom-left-radius: 5px 12px;
+}
+
+#quote {
+  font-size:5em;
+  width: 90%;
+  margin: 0 auto;
+  position:relative;	
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  transition: opacity 1s;
+
+}
+
+/* -- SHARED ANIMATIONS -- */
+@keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
+@-webkit-keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
+@-moz-keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
+@-ms-keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
+@-o-keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
+
+
+@keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
+@-webkit-keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
+@-moz-keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
+@-ms-keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
+@-o-keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
+
+/* This animation is used by the inline styles on each letter, 
+which are adding via the JS method letters() */
+@keyframes letterAppear {
+  0% { opacity:0;}
+  10% { opacity:1;}
+  100% {opacity:1;}
+}
+@-webkit-keyframes letterAppear {
+  0% { opacity:0;}
+  10% { opacity:1;}
+  100% {opacity:1;}
+}
+@-moz-keyframes letterAppear {
+  0% { opacity:0;}
+  10% { opacity:1;}
+  100% {opacity:1;}
+}
+@-ms-keyframes letterAppear {
+  0% { opacity:0;}
+  10% { opacity:1;}
+  100% {opacity:1;}
+}
+@-o-keyframes letterAppear {
+  0% { opacity:0;}
+  10% { opacity:1;}
+  100% {opacity:1;}
+}
+
+/* -- SCENE 1: Raise paper and turn typewriter rollers -- */
+
+/* raise the paper up */
+@keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
+@keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
+@keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
+@keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
+
+@-webkit-keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
+@-webkit-keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
+@-webkit-keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
+@-webkit-keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
+
+@-moz-keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
+@-moz-keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
+@-moz-keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
+@-moz-keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
+
+@-ms-keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
+@-ms-keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
+@-ms-keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
+@-ms-keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
+
+@-o-keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
+@-o-keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
+@-o-keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
+@-o-keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
+
+#quote #one {
+  position:absolute; 
+  top: 300px;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  -ms-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+
+}
+
+#quote #one.scene1 {
+  -webkit-animation:   
+    line2 1s 3.6s forwards ease-in-out,
+    line3 1s 8000ms forwards ease-in-out,   
+    line4 1s 12000ms forwards ease-in-out,
+    line5 1s 16250ms forwards ease-in-out;   
+  
+  -moz-animation:   
+    /* '...a good dinner:'
+    takes 3.6 seconds for all letters to appear */
+
+    /* 'is of great' letters start typing at: 5250*/  
+    line2 1s 3.6s forwards ease-in-out,
+  
+    /* 'importance' starts at: 9000 */
+    line3 1s 8000ms forwards ease-in-out,   
+
+    /* 'to good talk' letters start at 13000 */
+    line4 1s 12000ms forwards ease-in-out,
+
+    /* 'one cannot' letters start at: 17250 */
+    line5 1s 16250ms forwards ease-in-out;   
+    
+    -ms-animation:   
+        line2 1s 3.6s forwards ease-in-out,
+        line3 1s 8000ms forwards ease-in-out,   
+        line4 1s 12000ms forwards ease-in-out,
+        line5 1s 16250ms forwards ease-in-out;
+    -o-animation:   
+        line2 1s 3.6s forwards ease-in-out,
+        line3 1s 8000ms forwards ease-in-out,   
+        line4 1s 12000ms forwards ease-in-out,
+        line5 1s 16250ms forwards ease-in-out;
+    animation:   
+        line2 1s 3.6s forwards ease-in-out,
+        line3 1s 8000ms forwards ease-in-out,   
+        line4 1s 12000ms forwards ease-in-out,
+        line5 1s 16250ms forwards ease-in-out;
+    
+}
+
+/* Turn the typerwriter roller */
+@keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+
+@-webkit-keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-webkit-keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-webkit-keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-webkit-keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+
+@-moz-keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-moz-keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-moz-keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-moz-keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+
+@-ms-keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-ms-keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-ms-keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-ms-keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+
+@-o-keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-o-keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-o-keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@-o-keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+
+#roller.scene1 {
+  -webkit-animation:  
+      turn1 1s 3.6s forwards ease-in-out,
+      turn2 1s 8000ms forwards ease-in-out,   
+      turn3 1s 12000ms forwards ease-in-out,
+      turn4 1s 16250ms forwards ease-in-out;
+  -moz-animation:  
+      turn1 1s 3.6s forwards ease-in-out,
+      turn2 1s 8000ms forwards ease-in-out,   
+      turn3 1s 12000ms forwards ease-in-out,
+      turn4 1s 16250ms forwards ease-in-out;
+  -ms-animation:  
+      turn1 1s 3.6s forwards ease-in-out,
+      turn2 1s 8000ms forwards ease-in-out,   
+      turn3 1s 12000ms forwards ease-in-out,
+      turn4 1s 16250ms forwards ease-in-out;
+  -o-animation:  
+      turn1 1s 3.6s forwards ease-in-out,
+      turn2 1s 8000ms forwards ease-in-out,   
+      turn3 1s 12000ms forwards ease-in-out,
+      turn4 1s 16250ms forwards ease-in-out;
+  animation:  
+      turn1 1s 3.6s forwards ease-in-out,
+      turn2 1s 8000ms forwards ease-in-out,   
+      turn3 1s 12000ms forwards ease-in-out,
+      turn4 1s 16250ms forwards ease-in-out;
+
+}
+
+#quote #one.hide { opacity:0; }
+
+#quote #one span { opacity:0; }
+
+/* -- SUBSCENES -- */
+#subscenes {
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+}
+
+/* -- SCENE 2: THINK WELL -- */
+#think, #well { 
+  font-size:8em;
+  width:100%;
+  margin-top:0px;
+  opacity:0;
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+
+}
+
+#think { margin-left: 10%;}
+#well {
+  position: absolute; 
+  top:0px;
+  left: 520px;
+}
+
+@-moz-keyframes think{
+  0% { }
+  35% { -moz-transform: rotateX(-200deg); }
+  50% { -moz-transform: rotateX(-160deg); }
+  80% { -moz-transform: rotateX(-180deg); }
+  100% { -moz-transform: rotateX(-180deg); }
+}
+@-webkit-keyframes think{
+  0% { }
+  35% { -webkit-transform: rotateX(-200deg); }
+  50% { -webkit-transform: rotateX(-160deg); }
+  80% { -webkit-transform: rotateX(-180deg); }
+  100% { -webkit-transform: rotateX(-180deg); }
+}
+@-ms-keyframes think{
+  0% { }
+  35% { -ms-transform: rotateX(-200deg); }
+  50% { -ms-transform: rotateX(-160deg); }
+  80% { -ms-transform: rotateX(-180deg); }
+  100% { -ms-transform: rotateX(-180deg); }
+}
+@-o-keyframes think{
+  0% { }
+  35% { -o-transform: rotateX(-200deg); }
+  50% { -o-transform: rotateX(-160deg); }
+  80% { -o-transform: rotateX(-180deg); }
+  100% { -o-transform: rotateX(-180deg); }
+}
+@keyframes think{
+  0% { }
+  35% { transform: rotateX(-200deg); }
+  50% { transform: rotateX(-160deg); }
+  80% { transform: rotateX(-180deg); }
+  100% { transform: rotateX(-180deg); }
+}
+
+#think.scene2 { 
+  /* delay slightly to allow main text to fade out*/
+  -webkit-animation: 
+      fadeIn 0.6s 0.5s forwards,
+      think 1.8s 1s forwards;
+  -moz-animation: 
+      fadeIn 0.6s 0.5s forwards,
+      think 1.8s 1s forwards;
+  -ms-animation: 
+      fadeIn 0.6s 0.5s forwards,
+      think 1.8s 1s forwards;
+  -o-animation: 
+      fadeIn 0.6s 0.5s forwards,
+      think 1.8s 1s forwards;
+  animation: 
+      fadeIn 0.6s 0.5s forwards,
+      think 1.8s 1s forwards;
+}
+
+#well.scene2 {
+  -webkit-animation: 
+      fadeIn 0.5s 1s forwards;
+  -moz-animation: 
+      fadeIn 0.5s 1s forwards;
+  -ms-animation: 
+      fadeIn 0.5s 1s forwards;
+  -o-animation: 
+      fadeIn 0.5s 1s forwards;
+  animation: 
+      fadeIn 0.5s 1s forwards;
+
+}
+
+#think.hide, #well.hide { display:none; }
+
+/* -- SCENE 3: LOVE WELL -- */
+#love { 
+  -webkit-transform-origin: 50% 40%;
+  -moz-transform-origin: 50% 40%;
+  -o-transform-origin: 50% 40%;
+  -ms-transform-origin: 50% 40%;
+  transform-origin: 50% 40%;
+
+  font-size:3400%;
+}
+
+@-webkit-keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;} }
+@-moz-keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;} }
+@-ms-keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;} }
+@-o-keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;}}
+@keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;}}
+
+#love.scene3 p {
+  width:1000%;
+  position:absolute;
+  top:-200px;
+  left:-1251px;
+  margin-top:0;
+  -webkit-animation: loveWell 2s forwards linear;
+  -moz-animation: loveWell 2s forwards linear;
+  -ms-animation: loveWell 2s forwards linear;
+  -o-animation: loveWell 2s forwards linear;
+  animation: loveWell 2s forwards linear;
+}
+
+#love.hide { display:none; }
+
+
+/* -- SCENE 4: SLEEP WELL -- */
+#sleep {
+  opacity:0; 
+  font-size:6em;
+  margin-left: 5%;	
+  -webkit-transition:opacity 1s;
+  -moz-transition:opacity 1s;
+  -ms-transition:opacity 1s;
+  -o-transition:opacity 1s;
+  transition:opacity 1s;
+}
+
+#sleep.scene4 { opacity:1; }
+
+@-webkit-keyframes growWords { 0% {} 100% { font-size:1.4em;}}
+@-moz-keyframes growWords { 0% {} 100% { font-size:1.4em;} }
+@-ms-keyframes growWords { 0% {} 100% { font-size:1.4em;}}
+@-o-keyframes growWords { 0% {} 100% { font-size:1.4em;}}
+@keyframes growWords { 0% {} 100% { font-size:1.4em;}}
+
+#sleep.scene4 span {
+  /* delay by 1s to allow fade in */
+  -webkit-animation: growWords 0.5s 1s forwards;
+  -moz-animation: growWords 0.5s 1s forwards;
+  -ms-animation: growWords 0.5s 1s forwards;
+  -o-animation: growWords 0.5s 1s forwards;
+  animation: growWords 0.5s 1s forwards;
+
+}
+
+#sleep.hide { opacity:0; }
+
+
+/* the second span (which holds the word "well") is delayed
+by 0.7 seconds so that it runs a little after the first word animates */
+#sleep.scene4 span:nth-of-type(2) { 
+  -webkit-animation-delay:1.7s;
+  -moz-animation-delay:1.7s;
+  -ms-animation-delay:1.7s;
+  -o-animation-delay:1.7s;
+  animation-delay:1.7s;
+}
+
+
+/* -- SCENE 5: ---
+Raise paper again to reveal second part of quote, spin typewriter roller -- */
+#quote #two { display:none; }
+
+@-moz-keyframes line6 { 0% {top: -25px; } 100% { top: -130px;} }
+@-webkit-keyframes line6 { 0% {top: -25px; } 100% { top: -130px;}}
+@-ms-keyframes line6 { 0% {top: -25px; } 100% { top: -130px;}}
+@-o-keyframes line6 { 0% {top: -25px; } 100% { top: -130px;}}
+@keyframes line6 { 0% {top: -25px; } 100% { top: -130px;}}
+
+@-moz-keyframes line7 { 0% {top: -130px;} 100% { top: -240px;} }
+@-webkit-keyframes line7 { 0% {top: -130px;} 100% { top: -240px;}}
+@-ms-keyframes line7 { 0% {top: -130px;} 100% { top: -240px;}}
+@-o-keyframes line7 { 0% {top: -130px;} 100% { top: -240px;}}
+@keyframes line7 { 0% {top: -130px;} 100% { top: -240px;}}
+
+@-moz-keyframes line8 { 0% {top: -240px;} 100% { top: -450px;} }
+@-webkit-keyframes line8 { 0% {top: -240px;} 100% { top: -450px;}}
+@-ms-keyframes line8 { 0% {top: -240px;} 100% { top: -450px;}}
+@-o-keyframes line8 { 0% {top: -240px;} 100% { top: -450px;}}
+@keyframes line8 { 0% {top: -240px;} 100% { top: -450px;}}
+
+#quote #two.scene5 {
+  display:block;
+  position:absolute;
+  top:-25px;
+  opacity:0;
+  
+  -moz-animation: 
+    fadeIn 1s forwards linear,
+    /* 'if one has not' letters start at 1500 */
+    line6 1s 0.5s forwards ease-in-out, 
+    /* 'dined well' letters start at 5750 */
+    line7 1s 4.75s forwards ease-in-out,
+    /* V woolf starts at 9750 */
+    line8 1s 8.75s forwards ease-in-out;
+  -webkit-animation: 
+    fadeIn 1s forwards linear,
+    line6 1s 0.5s forwards ease-in-out, 
+    line7 1s 4.75s forwards ease-in-out,
+    line8 1s 8.75s forwards ease-in-out;
+  -ms-animation: 
+    fadeIn 1s forwards linear,
+    line6 1s 0.5s forwards ease-in-out, 
+    line7 1s 4.75s forwards ease-in-out,
+    line8 1s 8.75s forwards ease-in-out;
+  -o-animation: 
+    fadeIn 1s forwards linear,
+    line6 1s 0.5s forwards ease-in-out, 
+    line7 1s 4.75s forwards ease-in-out,
+    line8 1s 8.75s forwards ease-in-out;
+  animation: 
+    fadeIn 1s forwards linear,
+    line6 1s 0.5s forwards ease-in-out, 
+    line7 1s 4.75s forwards ease-in-out,
+    line8 1s 8.75s forwards ease-in-out;
+ 
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  transition: opacity 1s;
+
+}
+
+#quote #two span { opacity: 0;}
+
+/* turn1-3 are defined higher up, in scene 1 */
+#roller.scene5 {
+  -webkit-animation:  
+      turn1 1s 0.5s forwards ease-in-out,
+      turn2 1s 4.75s forwards ease-in-out,   
+      turn3 1s 8.75s forwards ease-in-out;
+  -moz-animation:  
+      turn1 1s 0.5s forwards ease-in-out,
+      turn2 1s 4.75s forwards ease-in-out,   
+      turn3 1s 8.75s forwards ease-in-out;
+  -ms-animation:  
+      turn1 1s 0.5s forwards ease-in-out,
+      turn2 1s 4.75s forwards ease-in-out,   
+      turn3 1s 8.75s forwards ease-in-out;
+  -o-animation:  
+      turn1 1s 0.5s forwards ease-in-out,
+      turn2 1s 4.75s forwards ease-in-out,   
+      turn3 1s 8.75s forwards ease-in-out;
+  animation:  
+      turn1 1s 0.5s forwards ease-in-out,
+      turn2 1s 4.75s forwards ease-in-out,   
+      turn3 1s 8.75s forwards ease-in-out;
+}
