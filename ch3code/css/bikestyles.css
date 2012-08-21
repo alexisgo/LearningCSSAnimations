@@ -175,9 +175,16 @@
   position: absolute;	
   top: 68px;
 
+/* using border-radius: 50% doesn't work in certain
+   versions of mobile Safari, so we're using absolute
+   pixel values first, and if 50% isnt' understood, these
+   absolulte values will be used. */
+  -webkit-border-radius: 60px; 
+  -moz-border-radius: 60px; 
+      border-radius: 60px;   
+
   -webkit-border-radius: 50%; 
   -moz-border-radius: 50%; 
-      border-radius: 68px; /* */ 
       border-radius: 50%;   
 }
 
