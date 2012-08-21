@@ -28,7 +28,7 @@ h1 {
   text-align:center;
 }
 
-#bar #sources {
+#sources {
   background-color:gray;
   top:650px;
   width: 800px;
@@ -37,7 +37,7 @@ h1 {
   color:white;
 }
 
-#bar #sources a { 
+#sources a { 
   color:white; 
 }
 
@@ -169,8 +169,6 @@ ingredient*/
 #coke p {
   background-color:rgb(151,95,55);  
   color:white;    
-  /* now this delay is applied to BOTH rise and ingredient fade in, 
-  so the fade in and rise happen at the same time for the Coke hmmmm */
   -webkit-animation-delay:3s;
   -moz-animation-delay:3s;
   -ms-animation-delay:3s;
