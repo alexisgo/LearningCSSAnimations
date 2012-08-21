@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Simple Keyframe Animation Example</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<style>			
+    @-webkit-keyframes colorchange {
+      from { background-color: black; }
+      to { background-color: lightgray; }
+    }
+
+    @-moz-keyframes colorchange {
+      from { background-color: black; }
+      to { background-color: lightgray; }
+    }
+
+    @-ms-keyframes colorchange {
+      from { background-color: black; }
+      to { background-color: lightgray; }
+    }
+
+    @-o-keyframes colorchange {
+      from { background-color: black; }
+      to { background-color: lightgray; }
+    }
+
+    @keyframes colorchange {
+      from { background-color: black; }
+      to { background-color: lightgray; }
+    }
+
+    #animateMe {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+
+      -webkit-animation-name: colorchange;
+      -moz-animation-name: colorchange;
+      -ms-animation-name: colorchange;
+      -o-animation-name: colorchange;
+      animation-name: colorchange;
+
+      -webkit-animation-duration: 5s;
+      -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+      -o-animation-duration: 5s;
+      animation-duration: 5s;
+    }
+		</style>
+		
+	</head>
+	<body>		
+		<section id="animateMe"></section>
+	</body>
+</html>
