@@ -9,5 +9,5 @@ function transition() {
   else if (this.className == "blue"){
     this.className = "purple";
   }
-  console.log(this.className);
+  console.log("after "  +  this.className);
 }
