@@ -261,10 +261,8 @@ ingredient*/
 #gtTonic p strong {
   -webkit-animation-delay:4s;
   -moz-animation-delay:4s;
-  -ms-animation-delay:4s;
   -o-animation-delay:4s;
   animation-delay:4s;
-
 }
 /* -- REDBULL & VODKA -- */    
 #redbullVodka {
@@ -278,9 +276,15 @@ ingredient*/
 #redbull p {  
   background-color:rgb(235,191,0);
   -webkit-animation-delay:2s;  
+  -moz-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay:2s;
 }
 #redbull p strong {  
   -webkit-animation-delay:4s;  
+  -moz-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
 }
 
 /* -- BLOODY MARY -- */    
