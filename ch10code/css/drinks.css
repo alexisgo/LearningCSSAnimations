@@ -339,11 +339,13 @@ ingredient*/
 #wsLemonJuice p {
   background-color: yellow;
   -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay:2s;
 }
 #wsLemonJuice p strong {
   -webkit-animation-delay:4s;
   -moz-animation-delay:4s;
-  -ms-animation-delay:4s;
   -o-animation-delay:4s;
   animation-delay:4s;
 
@@ -353,7 +355,6 @@ ingredient*/
   background-color: rgb(224,226,153); 
   -webkit-animation-delay:4s;
   -moz-animation-delay:4s;
-  -ms-animation-delay:4s;
   -o-animation-delay:4s;
   animation-delay:4s;
 
@@ -361,7 +362,6 @@ ingredient*/
 #wsGomme p strong {
   -webkit-animation-delay:6s;
   -moz-animation-delay:6s;
-  -ms-animation-delay:6s;
   -o-animation-delay:6s;
   animation-delay:6s;
 
