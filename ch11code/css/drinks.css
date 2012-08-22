@@ -1,4 +1,8 @@
-body { background-color:lightblue; font-family: 'Shadows Into Light Two', cursive; }
+body { 
+  background-color:rgb(173,216,230); 
+  font-family: 'Shadows Into Light Two', cursive; 
+}
+
 h1 { 
   font-family: 'Righteous', cursive; font-size:2.5em;
   margin: 0 -8px 8px -8px;
@@ -22,41 +26,30 @@ h1 {
 }
 
 #bar section {  
-  width:110px; position:absolute; margin-left:100px; padding-top:20px;
-/* for napkin */
-  -webkit-perspective:600px;
+  width:110px; 
+  position:absolute; 
+  margin-left:100px; 
+  padding-top:20px;
 }
+
 #bar section h2 { 
   font-size:1.1em;
   margin:5px 0;
   text-align:center;
-  cursor:pointer;
 }
 
-.napkin {
-  /*napkin*/
-  padding:50px 40px 0 40px;
-  background-color:gray;
-  -webkit-transform: rotateZ(5deg) rotateX(60deg) 
-    rotateY(-2deg) translateY(-170px) translateX(-40px);
-  
-  border-radius: 10px 5px / 8px 2px;
-  width:100px;
-  height:90px;
-  position:relative;
-  z-index:-1;
-}
-
-#bar #sources {
+#sources {
   background-color:gray;
   top:650px;
-  width: 800px;
-  margin-left: -20px;
+  /* need the !important to override 
+  the '#bar section' selector */
+  width: 800px !important;
+  margin-left: -20px !important;
   padding:20px;
   color:white;
 }
 
-#bar #sources a { 
+#sources a { 
   color:white; 
 }
 
@@ -81,36 +74,26 @@ ingredient*/
   border-bottom-left-radius: 15px 20px; 
 }
 
-.tumbler div { 
-  width:100px; 
-  position:absolute; 
-  cursor: pointer;
-}
+.tumbler div { width:100px; position:absolute; }
 
 /* -- SHARED ANIMATIONS -- */        
 @-webkit-keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
-
 }
 
 @-moz-keyframes rise {
-  0% { height:0%;}
-  100% { height:100%; }
-}
-
-@-ms-keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
 }
 
 @-o-keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
 }
 
 @keyframes rise {
-  0% { height:0%;}
+  0% { height:0;}
   100% { height:100%; }
 
 }
@@ -126,11 +109,6 @@ ingredient*/
   0% { color:transparent;}
   100% { }
 
-}
-
-@-ms-keyframes ingredientFadeIn {
-  0% { color:transparent;}
-  100% { }
 }
 
 @-o-keyframes ingredientFadeIn {
@@ -153,7 +131,7 @@ ingredient*/
   this ensures changes move bottom to top, not
   top to bottom */
   position:absolute;
-  bottom:0%;            
+  bottom:0;            
   text-align:center;
   -webkit-animation: rise 2s both ease-out;
   -moz-animation: rise 2s both ease-out;
@@ -174,7 +152,7 @@ ingredient*/
 }
 
 /* -- RUM AND COKE -- */    
-#rum { height:20%; bottom:0%; }
+#rum { height:20%; bottom:0; }
 #rum p {  background-color:rgb(235,191,0);}
 
 #rumncoke { }
@@ -192,8 +170,6 @@ ingredient*/
 #coke p {
   background-color:rgb(151,95,55);  
   color:white;    
-  /* now this delay is applied to BOTH rise and ingredient fade in, 
-  so the fade in and rise happen at the same time for the Coke hmmmm */
   -webkit-animation-delay:3s;
   -moz-animation-delay:3s;
   -ms-animation-delay:3s;
@@ -285,10 +261,8 @@ ingredient*/
 #gtTonic p strong {
   -webkit-animation-delay:4s;
   -moz-animation-delay:4s;
-  -ms-animation-delay:4s;
   -o-animation-delay:4s;
   animation-delay:4s;
-
 }
 /* -- REDBULL & VODKA -- */    
 #redbullVodka {
@@ -302,9 +276,15 @@ ingredient*/
 #redbull p {  
   background-color:rgb(235,191,0);
   -webkit-animation-delay:2s;  
+  -moz-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay:2s;
 }
 #redbull p strong {  
   -webkit-animation-delay:4s;  
+  -moz-animation-delay:4s;
+  -o-animation-delay:4s;
+  animation-delay:4s;
 }
 
 /* -- BLOODY MARY -- */    
@@ -359,11 +339,13 @@ ingredient*/
 #wsLemonJuice p {
   background-color: yellow;
   -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay:2s;
 }
 #wsLemonJuice p strong {
   -webkit-animation-delay:4s;
   -moz-animation-delay:4s;
-  -ms-animation-delay:4s;
   -o-animation-delay:4s;
   animation-delay:4s;
 
@@ -373,7 +355,6 @@ ingredient*/
   background-color: rgb(224,226,153); 
   -webkit-animation-delay:4s;
   -moz-animation-delay:4s;
-  -ms-animation-delay:4s;
   -o-animation-delay:4s;
   animation-delay:4s;
 
@@ -381,7 +362,6 @@ ingredient*/
 #wsGomme p strong {
   -webkit-animation-delay:6s;
   -moz-animation-delay:6s;
-  -ms-animation-delay:6s;
   -o-animation-delay:6s;
   animation-delay:6s;
 
