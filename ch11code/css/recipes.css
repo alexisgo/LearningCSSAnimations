@@ -67,6 +67,8 @@
   animation: fadeTextIn 1.5s forwards;
 }
 
+/* For browsers that don't support CSS Animations,
+we'll just manually change the li's opacity back to 1 */
 .no-cssanimations .recipes ul.visible li {
   opacity:1;
 }
@@ -99,9 +101,13 @@
   100% {text-shadow: 1px 1px 10px black;}
 }
 
-.recipes ul li.highlight {
+.cssanimations .recipes ul li.highlight {
   -webkit-animation: fadeTextIn 1.5s both, glow 2s forwards 0.5s;
   -moz-animation: fadeTextIn 1.5s both, glow 2s forwards 0.5s;
   -o-animation: fadeTextIn 1.5s both, glow 2s forwards 0.5s;
   animation: fadeTextIn 1.5s both, glow 2s forwards 0.5s;
+}
+
+.no-cssanimations .recipes ul li.highlight {
+  text-shadow: 1px 1px 10px black;
 }
