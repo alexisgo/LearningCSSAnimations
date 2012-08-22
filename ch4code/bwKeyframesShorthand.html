@@ -8,37 +8,11 @@
 		<title>changing colors on an element with keyframe animations</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <!-- base css for bw keyframes animations -->
+		<link rel="stylesheet" href="css/bwKeyframes.css">
+    <!-- custom css for this file -->
 		<style>			
-			@-webkit-keyframes rangeOfGrays {
-				0% { background-color: black; }
-				33% { background-color: rgb(211,211,211); }
-				66% { background-color: rgb(105,105,105); /*darkgray*/; }
-				100% { background-color: gray; }
-			}
-			@-moz-keyframes rangeOfGrays {
-				0% { background-color: black; }
-				33% { background-color: rgb(211,211,211); }
-				66% { background-color: rgb(105,105,105); /*darkgray*/; }
-				100% { background-color: gray; }
-			}
-			@-o-keyframes rangeOfGrays {
-				0% { background-color: black; }
-				33% { background-color: rgb(211,211,211); }
-				66% { background-color: rgb(105,105,105); /*darkgray*/; }
-				100% { background-color: gray; }
-			}
-			@keyframes rangeOfGrays {
-				0% { background-color: black; }
-				33% { background-color: rgb(211,211,211); }
-				66% { background-color: rgb(105,105,105); /*darkgray*/; }
-				100% { background-color: gray; }
-			}
-
 		#animation {
-			width: 100px;
-			height: 100px;
-			background-color:black;
-			
 			/*animation: name, duration, timing function, delay, iteration count, 
 			             direction, fill mode */
 			-webkit-animation: rangeOfGrays 5s linear 0s 2 alternate forwards;

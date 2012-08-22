@@ -5,55 +5,10 @@
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<title>colorKeyframes</title>
+		<title>Changing from Black to lightgray with Keyframe Animations</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-		<style>			
-@-webkit-keyframes rangeOfGrays {
-  0% { background-color: black; }
-  33% { background-color: rgb(211,211,211); }
-  66% { background-color: rgb(105,105,105); /*darkgray*/; }
-  100% { background-color: gray; }
-}
-
-@-moz-keyframes rangeOfGrays {
-  0% { background-color: black; }
-  33% { background-color: rgb(211,211,211); }
-  66% { background-color: rgb(105,105,105); /*darkgray*/; }
-  100% { background-color: gray; }
-}
-
-@-o-keyframes rangeOfGrays {
-  0% { background-color: black; }
-  33% { background-color: rgb(211,211,211); }
-  66% { background-color: rgb(105,105,105); /*darkgray*/; }
-  100% { background-color: gray; }
-}
-
-@keyframes rangeOfGrays {
-  0% { background-color: black; }
-  33% { background-color: rgb(211,211,211); }
-  66% { background-color: rgb(105,105,105); /*darkgray*/; }
-  100% { background-color: gray; }
-}
-    
-		#animation {
-      width: 100px;
-      height: 100px;
-      background-color:black;
-
-      -webkit-animation-name: rangeOfGrays;
-      -moz-animation-name: rangeOfGrays;
-      -o-animation-name: rangeOfGrays;
-      animation-name: rangeOfGrays;
-			
-      -webkit-animation-duration: 5s;
-      -moz-animation-duration: 5s;
-      -o-animation-duration: 5s;	
-      animation-duration: 5s;	
-		}
-		</style>
-		
+		<link rel="stylesheet" href="css/bwKeyframes.css">
 	</head>
 	<body>		
 		<section id="animation"></section>
