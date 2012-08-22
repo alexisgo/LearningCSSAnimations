@@ -1,4 +1,8 @@
-body { background-color:lightblue; font-family: 'Shadows Into Light Two', cursive; }
+body { 
+  background-color:rgb(173,216,230); 
+  font-family: 'Shadows Into Light Two', cursive; 
+}
+
 h1 { 
   font-family: 'Righteous', cursive; font-size:2.5em;
   margin: 0 -8px 8px -8px;
@@ -21,7 +25,13 @@ h1 {
   position:relative;
 }
 
-#bar section {  width:110px; position:absolute; margin-left:100px; padding-top:20px;}
+#bar section {  
+  width:110px; 
+  position:absolute; 
+  margin-left:100px; 
+  padding-top:20px;
+}
+
 #bar section h2 { 
   font-size:1.1em;
   margin:5px 0;
@@ -68,15 +78,9 @@ ingredient*/
 @-webkit-keyframes rise {
   0% { height:0;}
   100% { height:100%; }
-
 }
 
 @-moz-keyframes rise {
-  0% { height:0;}
-  100% { height:100%; }
-}
-
-@-ms-keyframes rise {
   0% { height:0;}
   100% { height:100%; }
 }
@@ -103,11 +107,6 @@ ingredient*/
   0% { color:transparent;}
   100% { }
 
-}
-
-@-ms-keyframes ingredientFadeIn {
-  0% { color:transparent;}
-  100% { }
 }
 
 @-o-keyframes ingredientFadeIn {
