@@ -8,7 +8,7 @@ function setup() {
  });
 
   // if we click on an individual ingredient
-  $('#bar section .tumbler div').on('click', function() {
+  $('.tumbler div').on('click', function() {
     resetClasses($(this));
     revealRecipe($(this))
 
