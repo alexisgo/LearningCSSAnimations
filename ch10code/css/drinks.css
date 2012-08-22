@@ -44,7 +44,7 @@ h1 {
   /* need the important to override 
   the '#bar section' selector */
   width: 800px !important;
-  margin-left: -20px;
+  margin-left: -20px !important;
   padding:20px;
   color:white;
 }
