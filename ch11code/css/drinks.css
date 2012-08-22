@@ -36,6 +36,7 @@ h1 {
   font-size:1.1em;
   margin:5px 0;
   text-align:center;
+  cursor:pointer;
 }
 
 #sources {
@@ -74,7 +75,11 @@ ingredient*/
   border-bottom-left-radius: 15px 20px; 
 }
 
-.tumbler div { width:100px; position:absolute; }
+.tumbler div { 
+  width:100px; 
+  position:absolute; 
+  cursor:pointer;
+}
 
 /* -- SHARED ANIMATIONS -- */        
 @-webkit-keyframes rise {
