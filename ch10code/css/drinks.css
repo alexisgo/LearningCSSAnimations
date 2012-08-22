@@ -41,7 +41,7 @@ h1 {
 #sources {
   background-color:gray;
   top:650px;
-  /* need the important to override 
+  /* need the !important to override 
   the '#bar section' selector */
   width: 800px !important;
   margin-left: -20px !important;
