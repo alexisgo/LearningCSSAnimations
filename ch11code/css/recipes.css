@@ -108,6 +108,9 @@ we'll just manually change the li's opacity back to 1 */
   animation: fadeTextIn 1.5s both, glow 2s forwards 0.5s;
 }
 
+/*in browsers w/o css animation support, 
+add text shadow to selected li elements 
+as soon as they have the class highlighted added"*/
 .no-cssanimations .recipes ul li.highlight {
   text-shadow: 1px 1px 10px black;
 }
