@@ -34,8 +34,15 @@
 
 .recipes ul {
   margin-left: 40px;
-  padding:10px;
+  margin-top: 0;
+  padding:0 10px;
   display:none; 
+}
+
+.recipes h3 {
+  padding:10px 0;
+  margin:0 20px;
+  display:none;
 }
 
 .recipes strong {
@@ -43,7 +50,8 @@
   margin-left:-20px;
 }
 
-.recipes ul.visible {
+.recipes ul.visible,
+.recipes h3.visible {
   display:block;  
 }
 

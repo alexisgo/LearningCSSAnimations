@@ -30,6 +30,7 @@ function resetClasses($elem) {
 
   // Clear out any previous visible recipes or highlights
   $('.recipes ul').removeClass('visible'); 
+  $('.recipes h3').removeClass('visible'); 
   $('.recipes').removeClass('row2');
   $('.recipes ul li').removeClass('highlight');   
 
@@ -43,4 +44,5 @@ function resetClasses($elem) {
 function revealRecipe($elem) {
   var drinkIndex = $elem.closest('section').index('#bar section') + 1;
   $('.recipes ul:nth-of-type(' + drinkIndex + ')').addClass('visible');
+  $('.recipes h3:nth-of-type(' + drinkIndex + ')').addClass('visible');
 }
