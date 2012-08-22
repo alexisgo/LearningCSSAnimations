@@ -45,11 +45,6 @@
   display:none;
 }
 
-.recipes strong {
-  padding:10px 0;
-  margin-left:-20px;
-}
-
 .recipes ul.visible,
 .recipes h3.visible {
   display:block;  
