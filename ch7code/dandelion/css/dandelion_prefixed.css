@@ -242,7 +242,7 @@ body {
 
 }
 
-section[id^="quadrent"] {
+section[id^="quadrant"] {
 	position: absolute;
 	bottom: 339px;
 	left: 171px;
@@ -317,7 +317,7 @@ section[id^="quadrent"] {
 
 }
 
-#quadrent2 {
+#quadrant2 {
 	-webkit-transform: rotateZ(89deg);
 	-moz-transform: rotateZ(89deg);
 	-o-transform: rotateZ(89deg);
@@ -333,7 +333,7 @@ section[id^="quadrent"] {
 	animation: blowRightQuad2 6s forwards ease-in;
 }
 
-#quadrent3 {
+#quadrant3 {
 	-webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
 	-o-transform: rotateX(180deg);
@@ -398,7 +398,7 @@ section[id^="quadrent"] {
 
 }
 
-#quadrent4 {
+#quadrant4 {
 	-webkit-transform: rotateZ(180deg);
 	-moz-transform: rotateZ(180deg);
 	-o-transform: rotateZ(180deg);
@@ -414,7 +414,7 @@ section[id^="quadrent"] {
 	animation: blowRightQuad4 6s forwards ease-in;
 }
 
-#quadrent5 {
+#quadrant5 {
 	-webkit-transform-origin: 100% 50%;
 	-moz-transform-origin: 100% 50%;
 	-o-transform-origin: 100% 50%;
@@ -443,7 +443,7 @@ section[id^="quadrent"] {
 }
 
 /* use section here instead of an
-id selector so every quadrent can reuse this positioning;
+id selector so every quadrant can reuse this positioning;
 	 then the
 quandrent itself just adjusts the rotation for all 4 seeds inside it */
 section div:nth-of-type(1) {
