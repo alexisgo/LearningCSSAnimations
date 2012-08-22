@@ -59,12 +59,16 @@
 @-o-keyframes fadeTextIn { 0% { opacity:0; } 100% { opacity:1; } }
 @keyframes fadeTextIn { 0% { opacity:0; } 100% { opacity:1; } }
 
-.recipes ul.visible li {
+.cssanimations .recipes ul.visible li {
   /* forwards ensures that we preserve the end state of opacity 1 */
   -webkit-animation: fadeTextIn 1.5s forwards;
   -moz-animation: fadeTextIn 1.5s forwards;
   -o-animation: fadeTextIn 1.5s forwards;
   animation: fadeTextIn 1.5s forwards;
+}
+
+.no-cssanimations .recipes ul.visible li {
+  opacity:1;
 }
 
 @-webkit-keyframes glow {
