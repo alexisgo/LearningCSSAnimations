@@ -38,118 +38,119 @@
 	/* double striped gradients example from
   Estelle Weyl: 
 	http://standardista.com/cssgradients/ */
-background-image: /* Safari 5 and earlier */
-	-webkit-gradient(linear, 100% 100%, 0 0,
-		color-stop(.25, rgba(255, 255, 255, 0.2)), 
-		color-stop(.25, rgba(255, 255, 255, 0)),
-		color-stop(.5, rgba(255, 255, 255, 0)), 
-		color-stop(.5, rgba(255, 255, 255, 0.2)),
-		color-stop(.75, rgba(255, 255, 255, 0.2)), 
-		color-stop(.75, rgba(255, 255, 255, 0)), 
-		color-stop(1, rgba(255, 255, 255, 0))),
-	-webkit-gradient(linear, 100% 0, 0 100%,
-		color-stop(.25, rgba(255, 255, 255, 0.2)), 
-		color-stop(.25, rgba(255, 255, 255, 0)),
-		color-stop(.5, rgba(255, 255, 255, 0)), 
-		color-stop(.5, rgba(255, 255, 255, 0.2)),
-		color-stop(.75, rgba(255, 255, 255, 0.2)), 
-		color-stop(.75, rgba(255, 255, 255, 0)), 
-		color-stop(1, rgba(255, 255, 255, 0)));
-	background-image:	/* Chrome and Webkit Nightly build */
-		-webkit-linear-gradient(135deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				),
-			-webkit-linear-gradient(45deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				);;
-	background-image:	/* Firefox */
-		-moz-linear-gradient(135deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				),
-				-moz-linear-gradient(45deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				);
-		background-image:	/* IE10 */
-		-ms-linear-gradient(135deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				),
-		-ms-linear-gradient(45deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				);
-		background-image:	/* opera 11+ */
-		-o-linear-gradient(135deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				),
-		-o-linear-gradient(45deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				);
-		background-image:	
-		linear-gradient(135deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				),
-		linear-gradient(45deg,
-				rgba(255, 255, 255, 0.2) 25%, 
-				rgba(255, 255, 255, 0) 25%,
-				rgba(255, 255, 255, 0) 50%, 
-				rgba(255, 255, 255, 0.2) 50%, 
-				rgba(255, 255, 255, 0.2) 75%,
-				rgba(255, 255, 255, 0) 75%,
-				rgba(255, 255, 255, 0) 100%
-  				);
+  
+  background-image: /* Safari 5 and earlier */
+  	-webkit-gradient(linear, 100% 100%, 0 0,
+  		color-stop(.25, rgba(255, 255, 255, 0.2)), 
+  		color-stop(.25, rgba(255, 255, 255, 0)),
+  		color-stop(.5, rgba(255, 255, 255, 0)), 
+  		color-stop(.5, rgba(255, 255, 255, 0.2)),
+  		color-stop(.75, rgba(255, 255, 255, 0.2)), 
+  		color-stop(.75, rgba(255, 255, 255, 0)), 
+  		color-stop(1, rgba(255, 255, 255, 0))),
+  	-webkit-gradient(linear, 100% 0, 0 100%,
+  		color-stop(.25, rgba(255, 255, 255, 0.2)), 
+  		color-stop(.25, rgba(255, 255, 255, 0)),
+  		color-stop(.5, rgba(255, 255, 255, 0)), 
+  		color-stop(.5, rgba(255, 255, 255, 0.2)),
+  		color-stop(.75, rgba(255, 255, 255, 0.2)), 
+  		color-stop(.75, rgba(255, 255, 255, 0)), 
+  		color-stop(1, rgba(255, 255, 255, 0)));
+  	background-image:	/* Chrome and Webkit Nightly build */
+  		-webkit-linear-gradient(135deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				),
+  			-webkit-linear-gradient(45deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				);;
+  	background-image:	/* Firefox */
+  		-moz-linear-gradient(135deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				),
+  				-moz-linear-gradient(45deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				);
+  		background-image:	/* IE10 */
+  		-ms-linear-gradient(135deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				),
+  		-ms-linear-gradient(45deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				);
+  		background-image:	/* opera 11+ */
+  		-o-linear-gradient(135deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				),
+  		-o-linear-gradient(45deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				);
+  		background-image:	
+  		linear-gradient(135deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				),
+  		linear-gradient(45deg,
+  				rgba(255, 255, 255, 0.2) 25%, 
+  				rgba(255, 255, 255, 0) 25%,
+  				rgba(255, 255, 255, 0) 50%, 
+  				rgba(255, 255, 255, 0.2) 50%, 
+  				rgba(255, 255, 255, 0.2) 75%,
+  				rgba(255, 255, 255, 0) 75%,
+  				rgba(255, 255, 255, 0) 100%
+    				);
 }
 
 
@@ -188,6 +189,11 @@ background-image: /* Safari 5 and earlier */
           transform-style: preserve-3d;
   
 }
+
+#toprow {
+  z-index:2;
+}
+
 #toprow .right {  left: 40px;  }
 #toprow .flat {
   top: 50px;
