@@ -26,13 +26,14 @@ function setup() {
 }
 
 function resetClasses($elem) {
-  $('.recipes').addClass('visible'); 
-
-  // Clear out any previous visible recipes or highlights
-  $('.recipes ul').removeClass('visible'); 
-  $('.recipes h3').removeClass('visible'); 
+  //removes ALL classes from the elems that match
+  // these jQuery selectors
+  $('.recipes ul, .recipes h3, .recipes ul li').removeClass();
+  // this needs its own line since we don't ever 
+  // want to remove the 'recipes' class
   $('.recipes').removeClass('row2');
-  $('.recipes ul li').removeClass('highlight');   
+  
+  $('.recipes').addClass('visible'); 
 
   // which drink I'm on
   var drinkIndex = $elem.closest('section').index('#bar section') + 1;
