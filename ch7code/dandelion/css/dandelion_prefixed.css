@@ -1,4 +1,3 @@
-/* Inspired by:  http://idzr.org/styles/fourowhat.css */
 body {
 	background-color: rgb(44, 44, 44);
 }
@@ -242,7 +241,7 @@ body {
 
 }
 
-section[id^="quadrant"] {
+div[id^="quadrent"] {
 	position: absolute;
 	bottom: 339px;
 	left: 171px;
@@ -442,11 +441,10 @@ section[id^="quadrant"] {
 	position: absolute;
 }
 
-/* use section here instead of an
-id selector so every quadrant can reuse this positioning;
-	 then the
-quandrent itself just adjusts the rotation for all 4 seeds inside it */
-section div:nth-of-type(1) {
+/* use .quad class here instead of an
+id selector so every quadrent can reuse this positioning;
+then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
+.quad div:nth-of-type(1) {
 	-webkit-transform: rotateZ(-20deg) translate3d(5px,-5px,0);
 	-moz-transform: rotateZ(-20deg) translate3d(5px,-5px,0);
 	-o-transform: rotateZ(-20deg) translate3d(5px,-5px,0);
@@ -460,7 +458,7 @@ section div:nth-of-type(1) {
 	animation: seedChange1 6s;
 }
 
-section div:nth-of-type(2) {
+.quad div:nth-of-type(2) {
 	-webkit-transform: rotateZ(-30deg);
 	-moz-transform: rotateZ(-30deg);
 	-o-transform: rotateZ(-30deg);
@@ -474,7 +472,7 @@ section div:nth-of-type(2) {
 	animation: seedChange2 6s;
 }
 
-section div:nth-of-type(3) {
+.quad div:nth-of-type(3) {
 	-webkit-transform: rotateZ(-76deg) translate3d(-5px,0,0);
 	-moz-transform: rotateZ(-76deg) translate3d(-5px,0,0);
 	-o-transform: rotateZ(-76deg) translate3d(-5px,0,0);
@@ -488,7 +486,7 @@ section div:nth-of-type(3) {
 	animation: seedChange3 6s;
 }
 
-section div:nth-of-type(4) {
+.quad div:nth-of-type(4) {
 	-webkit-transform: rotateZ(-50deg);
 	-moz-transform: rotateZ(-50deg);
 	-o-transform: rotateZ(-50deg);
@@ -502,7 +500,7 @@ section div:nth-of-type(4) {
 	animation: seedChange4 6s;
 }
 
-section div:nth-of-type(5) {
+.quad div:nth-of-type(5) {
 	-webkit-animation: seedChange5 6s;
 	-moz-animation: seedChange5 6s;
 	-ms-animation: seedChange5 6s;
