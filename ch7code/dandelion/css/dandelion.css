@@ -114,7 +114,7 @@ div[id^="quadrant"] {
   position:absolute; 
 }
 
-/* use section here instead of an 
+/* use .quad class selector here instead of an 
 id selector so every quadrant can reuse this positioning; then the 
 quandrent itself just adjusts the rotation for all 4 seeds inside it */
 .quad div:nth-of-type(1) {
