@@ -58,7 +58,7 @@ body {
   100% { left:1600px; }
 }
 
-div[id^="quadrent"] {
+div[id^="quadrant"] {
   position:absolute;
   bottom: 339px;
   left: 171px;

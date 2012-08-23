@@ -241,7 +241,7 @@ body {
 
 }
 
-div[id^="quadrent"] {
+div[id^="quadrant"] {
 	position: absolute;
 	bottom: 339px;
 	left: 171px;
@@ -442,7 +442,7 @@ div[id^="quadrent"] {
 }
 
 /* use .quad class here instead of an
-id selector so every quadrent can reuse this positioning;
+id selector so every quadrant can reuse this positioning;
 then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 .quad div:nth-of-type(1) {
 	-webkit-transform: rotateZ(-20deg) translate3d(5px,-5px,0);
