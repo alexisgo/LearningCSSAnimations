@@ -1,0 +1,172 @@
+body {
+  background-color:rgb(50,50,50);  
+}
+
+#bgContainer {
+	width: 800px;
+	height: 400px;
+	overflow:hidden;
+	border:5px solid white;
+	margin: 30px auto;
+	position:relative;
+}
+
+nav {
+  width:400px;
+  height:40px;
+  margin:0 auto 50px;
+  text-align:center;
+}
+
+nav a {
+  background-color:white;
+  padding:5px;
+  
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+  color:gray;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:1.8em;
+  
+}
+
+.scene {
+  -webkit-transition: opacity 1s;
+}
+
+.one.invisible {
+  opacity:0;
+}
+/* scene2 and 3 links are initially hidden */
+.two, .three{
+  opacity:0;
+}
+
+.two.visible, .three.visible {
+  opacity:1;
+}
+.bg { 
+	width: 1000px;
+	height: 400px;
+	float:left;
+}
+
+#background1 {
+	background-image:url('../img/SFGraffiti.jpg');
+  background-position: 0 -200px;
+  -webkit-transition: background-position 2.2s ease-in-out,
+      left 1.5s ease-in-out;
+}
+
+.robotUnit {
+  position:absolute;
+  left:-300px;
+  bottom: 10px;
+  -webkit-transition: left 2.7s ease-in-out;
+  
+}
+
+#robot1, #skateboard {
+	width:150px;
+	height:205px;
+  z-index:2;
+  bottom:30px;
+  left:50px;
+  position:absolute;
+	background-image:url('../img/robot.png');		
+}
+
+#skateboard {
+	background-image:url('../img/skateboard.png');		
+	width:250px;
+	height:50px;
+	bottom:0;
+	left:5px;
+}
+
+#bikerack {
+	left:-300px;
+	position:absolute;
+	bottom: 10px;
+	-webkit-transition: left 2.5s ease-in-out;
+}
+
+#background1.move {
+  background-position: -250px -200px;
+}
+
+.robotUnit.move {
+  left: 600px;
+}
+#bikerack.move {
+  left: 450px;
+}
+
+/*--- scene 2 ---*/
+#background2 {
+	background-image:url('../img/outsideGatesWindow.png');
+  background-position: 0 -200px;
+	z-index:2; 
+	position:absolute;
+	left:1000px;
+	-webkit-transition: background-position 2.2s ease-in-out,
+      left 1.5s ease-in-out;  
+}
+
+#background1.slideOut {
+  position:absolute;
+  left:-1000px;
+}
+
+#background2.slideIn {
+  left:0;
+}
+
+/*--- scene 3 ---*/
+#robot2 {
+  position:absolute;
+  bottom:20px;
+	left:0;
+	width:300px;
+	height:277px;
+	background-image:url('../img/spriteRobotSpringy.png');		
+	-webkit-transition: left 2.4s ease-in-out;
+  
+}	
+
+#cat {
+  opacity:0;
+  left:-400px;
+  position:absolute;
+  bottom:-70px;
+  z-index:10;
+  -webkit-transition: left 2s ease-in-out;
+}
+
+#inside {
+  position:absolute;
+  left:460px;
+  bottom:300px;
+  z-index:-1;	  
+  -webkit-transition: left 2s ease-in-out;  
+}
+
+#background2.move { 
+  background-position: -250px -200px;
+}
+
+#robot2.move {
+  left: 520px;
+}
+
+#cat.move {
+  opacity:1;
+  left: 200px;
+}
+
+#inside.move {
+  left:300px;
+  
+}

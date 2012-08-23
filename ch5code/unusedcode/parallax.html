@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+	<title>Parallax Scrolling Across Scenes</title>
+	<!-- Date: 2012-04-07 -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/parallax.css">
+  <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>  
+</head>
+<body>
+<section id="bgContainer">
+	<section id="background0"></section>
+	<section id="background1" data-speed="10" data-type="background">
+		<div id="skateboard" data-speed="2" data-type="sprite"></div>
+		<div id="robot1" data-speed="2" data-type="sprite"></div>
+	</section>
+	<img src="img/separatorLampPost.png" id="lamppost"> 
+  <img src="img/insideApt.png" id="inside" data-type="background" data-speed="10">
+	<section id="background2" data-speed="8" data-type="background" data-offsetX="30">
+		<div id="robot2" data-type="sprite" data-speed="4"></div>
+		<img src="img/cat.png" id="cat" data-type="sprite" data-speed="12">
+	</section>
+<img src="img/separatorTree.png" id="tree">
+	<section id="background3" data-speed="14" data-type="background" data-offsetX="100">
+		<div id="robot3" data-type="sprite" data-speed="4"></div>			
+		<div id="bikerack" data-type="sprite" data-speed="14"></div>
+	</section>
+	<section id="background4" data-offset="0"></section>
+</section>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script typt="text/javascript" src="js/parallax.js"></script>
+</body>
+</html>
