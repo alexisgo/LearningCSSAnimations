@@ -53,12 +53,16 @@ nav a {
 .bg { 
 	width: 1000px;
 	height: 400px;
-	float:left;
 }
 
 #background1 {
 	background-image:url('../img/SFGraffiti.jpg');
   background-position: 0 -200px;
+  position:absolute;
+  left:0; /* important to set left here or FF, Opera
+  won't pick up on the change to -1000px later & 
+  won't apply the transition */
+  
   -webkit-transition: background-position 2.2s ease-in-out,
         left 1.5s ease-in-out;
   -moz-transition: background-position 2.2s ease-in-out,
@@ -119,6 +123,10 @@ nav a {
 }
 
 /*--- scene 2 ---*/
+#background1.slideOut {
+  left:-1000px;
+}
+
 #background2 {
 	background-image:url('../img/outsideGatesWindow.png');
   background-position: 0 -200px;
@@ -133,11 +141,6 @@ nav a {
         left 1.5s ease-in-out;
   transition: background-position 2.2s ease-in-out,
         left 1.5s ease-in-out;
-}
-
-#background1.slideOut {
-  position:absolute;
-  left:-1000px;
 }
 
 #background2.slideIn {
