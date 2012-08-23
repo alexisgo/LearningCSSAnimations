@@ -58,7 +58,6 @@ body {
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
-  -ms-transition: opacity 1s;
   transition: opacity 1s;
 
 }
@@ -67,23 +66,16 @@ body {
 @keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
 @-webkit-keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
 @-moz-keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
-@-ms-keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
 @-o-keyframes fadeIn { 0% {opacity:0;} 100% { opacity:1;}}
 
 
 @keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
 @-webkit-keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
 @-moz-keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
-@-ms-keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
 @-o-keyframes fadeOut { 0% {opacity:1;} 100% { opacity:0;}}
 
 /* This animation is used by the inline styles on each letter, 
 which are adding via the JS method letters() */
-@keyframes letterAppear {
-  0% { opacity:0;}
-  10% { opacity:1;}
-  100% {opacity:1;}
-}
 @-webkit-keyframes letterAppear {
   0% { opacity:0;}
   10% { opacity:1;}
@@ -94,12 +86,12 @@ which are adding via the JS method letters() */
   10% { opacity:1;}
   100% {opacity:1;}
 }
-@-ms-keyframes letterAppear {
+@-o-keyframes letterAppear {
   0% { opacity:0;}
   10% { opacity:1;}
   100% {opacity:1;}
 }
-@-o-keyframes letterAppear {
+@keyframes letterAppear {
   0% { opacity:0;}
   10% { opacity:1;}
   100% {opacity:1;}
@@ -108,11 +100,6 @@ which are adding via the JS method letters() */
 /* -- SCENE 1: Raise paper and turn typewriter rollers -- */
 
 /* raise the paper up */
-@keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
-@keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
-@keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
-@keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
-
 @-webkit-keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
 @-webkit-keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
 @-webkit-keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
@@ -123,15 +110,15 @@ which are adding via the JS method letters() */
 @-moz-keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
 @-moz-keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
 
-@-ms-keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
-@-ms-keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
-@-ms-keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
-@-ms-keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
-
 @-o-keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
 @-o-keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
 @-o-keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
 @-o-keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
+
+@keyframes line2 {  0% {top: 300px;} 100% { top: 200px;}	}
+@keyframes line3 { 0% {top: 200px;} 100% { top: 90px;}	}
+@keyframes line4 { 0% {top: 90px;} 100% { top: -20px;} }
+@keyframes line5 { 0% {top: -20px;} 100% { top: -140px;}	}
 
 #quote #one {
   position:absolute; 
@@ -139,7 +126,6 @@ which are adding via the JS method letters() */
   -webkit-transition: opacity 0.8s;
   -moz-transition: opacity 0.8s;
   -o-transition: opacity 0.8s;
-  -ms-transition: opacity 0.8s;
   transition: opacity 0.8s;
 
 }
@@ -167,11 +153,6 @@ which are adding via the JS method letters() */
     /* 'one cannot' letters start at: 17250 */
     line5 1s 16250ms forwards ease-in-out;   
     
-    -ms-animation:   
-        line2 1s 3.6s forwards ease-in-out,
-        line3 1s 8000ms forwards ease-in-out,   
-        line4 1s 12000ms forwards ease-in-out,
-        line5 1s 16250ms forwards ease-in-out;
     -o-animation:   
         line2 1s 3.6s forwards ease-in-out,
         line3 1s 8000ms forwards ease-in-out,   
@@ -186,11 +167,6 @@ which are adding via the JS method letters() */
 }
 
 /* Turn the typerwriter roller */
-@keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
-@keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
-@keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
-@keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
-
 @-webkit-keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
 @-webkit-keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
 @-webkit-keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
@@ -201,15 +177,15 @@ which are adding via the JS method letters() */
 @-moz-keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
 @-moz-keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
 
-@-ms-keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
-@-ms-keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
-@-ms-keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
-@-ms-keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
-
 @-o-keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
 @-o-keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
 @-o-keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
 @-o-keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+
+@keyframes turn1 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@keyframes turn2 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@keyframes turn3 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
+@keyframes turn4 { 0% { background-position: 50% 80px;} 100% { background-position: 50% 0px;} }
 
 #roller.scene1 {
   -webkit-animation:  
@@ -218,11 +194,6 @@ which are adding via the JS method letters() */
       turn3 1s 12000ms forwards ease-in-out,
       turn4 1s 16250ms forwards ease-in-out;
   -moz-animation:  
-      turn1 1s 3.6s forwards ease-in-out,
-      turn2 1s 8000ms forwards ease-in-out,   
-      turn3 1s 12000ms forwards ease-in-out,
-      turn4 1s 16250ms forwards ease-in-out;
-  -ms-animation:  
       turn1 1s 3.6s forwards ease-in-out,
       turn2 1s 8000ms forwards ease-in-out,   
       turn3 1s 12000ms forwards ease-in-out,
@@ -248,7 +219,6 @@ which are adding via the JS method letters() */
 #subscenes {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
-  -ms-perspective: 600px;
   -o-perspective: 600px;
   perspective: 600px;
 }
@@ -274,13 +244,6 @@ which are adding via the JS method letters() */
   left: 520px;
 }
 
-@-moz-keyframes think{
-  0% { }
-  35% { -moz-transform: rotateX(-200deg); }
-  50% { -moz-transform: rotateX(-160deg); }
-  80% { -moz-transform: rotateX(-180deg); }
-  100% { -moz-transform: rotateX(-180deg); }
-}
 @-webkit-keyframes think{
   0% { }
   35% { -webkit-transform: rotateX(-200deg); }
@@ -288,12 +251,12 @@ which are adding via the JS method letters() */
   80% { -webkit-transform: rotateX(-180deg); }
   100% { -webkit-transform: rotateX(-180deg); }
 }
-@-ms-keyframes think{
+@-moz-keyframes think{
   0% { }
-  35% { -ms-transform: rotateX(-200deg); }
-  50% { -ms-transform: rotateX(-160deg); }
-  80% { -ms-transform: rotateX(-180deg); }
-  100% { -ms-transform: rotateX(-180deg); }
+  35% { -moz-transform: rotateX(-200deg); }
+  50% { -moz-transform: rotateX(-160deg); }
+  80% { -moz-transform: rotateX(-180deg); }
+  100% { -moz-transform: rotateX(-180deg); }
 }
 @-o-keyframes think{
   0% { }
@@ -318,9 +281,6 @@ which are adding via the JS method letters() */
   -moz-animation: 
       fadeIn 0.6s 0.5s forwards,
       think 1.8s 1s forwards;
-  -ms-animation: 
-      fadeIn 0.6s 0.5s forwards,
-      think 1.8s 1s forwards;
   -o-animation: 
       fadeIn 0.6s 0.5s forwards,
       think 1.8s 1s forwards;
@@ -333,8 +293,6 @@ which are adding via the JS method letters() */
   -webkit-animation: 
       fadeIn 0.5s 1s forwards;
   -moz-animation: 
-      fadeIn 0.5s 1s forwards;
-  -ms-animation: 
       fadeIn 0.5s 1s forwards;
   -o-animation: 
       fadeIn 0.5s 1s forwards;
@@ -358,7 +316,6 @@ which are adding via the JS method letters() */
 
 @-webkit-keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;} }
 @-moz-keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;} }
-@-ms-keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;} }
 @-o-keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;}}
 @keyframes loveWell{ 0% { left:951px;} 100% { left:-3500px;}}
 
@@ -370,7 +327,6 @@ which are adding via the JS method letters() */
   margin-top:0;
   -webkit-animation: loveWell 2s forwards linear;
   -moz-animation: loveWell 2s forwards linear;
-  -ms-animation: loveWell 2s forwards linear;
   -o-animation: loveWell 2s forwards linear;
   animation: loveWell 2s forwards linear;
 }
@@ -385,7 +341,6 @@ which are adding via the JS method letters() */
   margin-left: 5%;	
   -webkit-transition:opacity 1s;
   -moz-transition:opacity 1s;
-  -ms-transition:opacity 1s;
   -o-transition:opacity 1s;
   transition:opacity 1s;
 }
@@ -394,7 +349,6 @@ which are adding via the JS method letters() */
 
 @-webkit-keyframes growWords { 0% {} 100% { font-size:1.4em;}}
 @-moz-keyframes growWords { 0% {} 100% { font-size:1.4em;} }
-@-ms-keyframes growWords { 0% {} 100% { font-size:1.4em;}}
 @-o-keyframes growWords { 0% {} 100% { font-size:1.4em;}}
 @keyframes growWords { 0% {} 100% { font-size:1.4em;}}
 
@@ -402,7 +356,6 @@ which are adding via the JS method letters() */
   /* delay by 1s to allow fade in */
   -webkit-animation: growWords 0.5s 1s forwards;
   -moz-animation: growWords 0.5s 1s forwards;
-  -ms-animation: growWords 0.5s 1s forwards;
   -o-animation: growWords 0.5s 1s forwards;
   animation: growWords 0.5s 1s forwards;
 
@@ -416,7 +369,6 @@ by 0.7 seconds so that it runs a little after the first word animates */
 #sleep.scene4 span:nth-of-type(2) { 
   -webkit-animation-delay:1.7s;
   -moz-animation-delay:1.7s;
-  -ms-animation-delay:1.7s;
   -o-animation-delay:1.7s;
   animation-delay:1.7s;
 }
@@ -428,19 +380,16 @@ Raise paper again to reveal second part of quote, spin typewriter roller -- */
 
 @-moz-keyframes line6 { 0% {top: -25px; } 100% { top: -130px;} }
 @-webkit-keyframes line6 { 0% {top: -25px; } 100% { top: -130px;}}
-@-ms-keyframes line6 { 0% {top: -25px; } 100% { top: -130px;}}
 @-o-keyframes line6 { 0% {top: -25px; } 100% { top: -130px;}}
 @keyframes line6 { 0% {top: -25px; } 100% { top: -130px;}}
 
 @-moz-keyframes line7 { 0% {top: -130px;} 100% { top: -240px;} }
 @-webkit-keyframes line7 { 0% {top: -130px;} 100% { top: -240px;}}
-@-ms-keyframes line7 { 0% {top: -130px;} 100% { top: -240px;}}
 @-o-keyframes line7 { 0% {top: -130px;} 100% { top: -240px;}}
 @keyframes line7 { 0% {top: -130px;} 100% { top: -240px;}}
 
 @-moz-keyframes line8 { 0% {top: -240px;} 100% { top: -450px;} }
 @-webkit-keyframes line8 { 0% {top: -240px;} 100% { top: -450px;}}
-@-ms-keyframes line8 { 0% {top: -240px;} 100% { top: -450px;}}
 @-o-keyframes line8 { 0% {top: -240px;} 100% { top: -450px;}}
 @keyframes line8 { 0% {top: -240px;} 100% { top: -450px;}}
 
@@ -450,24 +399,19 @@ Raise paper again to reveal second part of quote, spin typewriter roller -- */
   top:-25px;
   opacity:0;
   
-  -moz-animation: 
-    fadeIn 1s forwards linear,
-    /* 'if one has not' letters start at 1500 */
-    line6 1s 0.5s forwards ease-in-out, 
-    /* 'dined well' letters start at 5750 */
-    line7 1s 4.75s forwards ease-in-out,
-    /* V woolf starts at 9750 */
-    line8 1s 8.75s forwards ease-in-out;
   -webkit-animation: 
     fadeIn 1s forwards linear,
     line6 1s 0.5s forwards ease-in-out, 
     line7 1s 4.75s forwards ease-in-out,
     line8 1s 8.75s forwards ease-in-out;
-  -ms-animation: 
-    fadeIn 1s forwards linear,
-    line6 1s 0.5s forwards ease-in-out, 
-    line7 1s 4.75s forwards ease-in-out,
-    line8 1s 8.75s forwards ease-in-out;
+  -moz-animation: 
+      fadeIn 1s forwards linear,
+      /* 'if one has not' letters start at 1500 */
+      line6 1s 0.5s forwards ease-in-out, 
+      /* 'dined well' letters start at 5750 */
+      line7 1s 4.75s forwards ease-in-out,
+      /* V woolf starts at 9750 */
+      line8 1s 8.75s forwards ease-in-out;
   -o-animation: 
     fadeIn 1s forwards linear,
     line6 1s 0.5s forwards ease-in-out, 
@@ -482,7 +426,6 @@ Raise paper again to reveal second part of quote, spin typewriter roller -- */
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
-  -ms-transition: opacity 1s;
   transition: opacity 1s;
 
 }
@@ -496,10 +439,6 @@ Raise paper again to reveal second part of quote, spin typewriter roller -- */
       turn2 1s 4.75s forwards ease-in-out,   
       turn3 1s 8.75s forwards ease-in-out;
   -moz-animation:  
-      turn1 1s 0.5s forwards ease-in-out,
-      turn2 1s 4.75s forwards ease-in-out,   
-      turn3 1s 8.75s forwards ease-in-out;
-  -ms-animation:  
       turn1 1s 0.5s forwards ease-in-out,
       turn2 1s 4.75s forwards ease-in-out,   
       turn3 1s 8.75s forwards ease-in-out;
