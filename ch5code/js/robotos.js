@@ -6,7 +6,10 @@ $(document).ready(function(){
  var transEndEventNames = {
      'WebkitTransition' : 'webkitTransitionEnd',
      'MozTransition'    : 'transitionend',
-     'OTransition'      : 'oTransitionEnd',
+     // per Ian Lunn at http://www.ianlunn.co.uk/blog/articles/opera-12-otransitionend-bugs-and-workarounds/
+     // in Opera 12 they changed the case of oTransitionEnd 
+     // to be otransitionend instead
+     'OTransition'      : 'oTransitionEnd otransitionend',
      'msTransition'     : 'MSTransitionEnd',
      'transition'       : 'transitionend'
  },
