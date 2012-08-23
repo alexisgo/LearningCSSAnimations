@@ -11,9 +11,6 @@
   -moz-animation: spring 2.8s;
   -o-animation: spring 2.8s;
   animation: spring 2.8s;
-
-  /* makes the final keyframe stick
-  -webkit-animation-fill-mode: forwards;*/
 }
 
 @-webkit-keyframes spring {
@@ -79,7 +76,7 @@
 }
 
 
-@-o-keyframes "spring" {
+@-o-keyframes spring {
  0% {
    -o-transform: scale(1);
    transform: scale(1);
@@ -125,7 +122,7 @@
 
 }
 
-@keyframes "spring" {
+@keyframes spring {
  0% {
     -webkit-transform: scale(1);
    	-moz-transform: scale(1);
