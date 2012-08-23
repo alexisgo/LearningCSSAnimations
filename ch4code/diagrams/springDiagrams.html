@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>spring</title>
+		<meta name="description" content="" />
+		<meta name="generator" content="Studio 3 http://aptana.com/" />
+		<meta name="author" content="edgefreak" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<style>
+		
+		body {
+			font-family: Arial, sans-serif;
+		}
+		@-webkit-keyframes spring {
+				0% { -webkit-transform: scale(1);}
+				30% {
+					-webkit-transform: scale(1, 0.5);
+				}
+				/* quickly snaps back, longer than before */
+				40% { 
+					-webkit-transform: scale(1, 1.5);
+				}
+				/* compresses in again */
+				50% { -webkit-transform: scale(1, 0.7);}
+				/* stretches out */
+				61% { -webkit-transform: scale(1, 1.3);}
+				/* compress */
+				72% {-webkit-transform: scale(1, 0.8);
+				
+				}
+				83% {
+					-webkit-transform: scale(1, 1.2);
+					-webkit-animation-timing-function:ease-in-out;	
+				}
+				100% { -webkit-transform: scale(1);}
+			}
+			#container {
+				margin-top: 80px;
+				margin-left: 40px;
+			}
+
+			
+			div[id*=spring] {
+				background-image: url('../img/spring.png');
+				width:50px;
+				height:182px;
+				float:left;
+				margin: 0 30px 0 0;
+			}
+			#spring1 {
+				-webkit-transform: scale(1);
+				margin-right: 105px;
+
+			}
+			
+			#spring2 {
+				-webkit-transform: scale(1, 0.5);
+			}
+			
+			#spring3 {
+				-webkit-transform: scale(1, 1.5);
+			}
+			
+			#spring4 {
+				-webkit-transform: scale(1, 0.7);
+			}
+			
+			#spring5 {
+				-webkit-transform: scale(1, 1.4);
+				
+			}
+			
+			#spring6 {
+				-webkit-transform: scale(1, 0.8);
+			}
+			#spring7 {
+				-webkit-transform: scale(1, 1.2);
+			}
+			#spring8 {
+				-webkit-transform: scale(0.9);
+			}
+			#spring9 {
+				-webkit-transform: scale(1);
+			}
+
+			#labelcontainer {
+				position:relative;
+				top: 60px;
+				margin-left: 40px;
+			}
+			
+			.label {
+				border: 5px solid black;
+				border-top: none;
+				height: 20px;
+				/*width: 150px;*/
+				width: 150px;
+				
+				/*position: absolute;
+				top: 20px;
+				left: 340px;*/
+				float:left;
+				margin: 0 10px;
+				text-align:center;
+				
+			}
+			
+			.labeltext {
+				position: absolute;
+				top: 40px;
+			}
+			
+			#label2 {  width: 50px;}
+			#label3 {  width: 50px;}
+			#label4 {  width: 50px;}
+			#label5 {  width: 50px;}
+			#label6 {  width: 50px;}
+			#label7 {  width: 50px;}
+
+			.css { 
+				
+				position: absolute;
+				top:10px;
+				color:white;
+				
+			}
+			
+			#csslabel2 {}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<span class="css">scale(1.0)</span>
+			<div id="spring1"></div>	
+			
+			<span class="css" id="csslabel2">scale(1.0, 0.5)</span>	
+			<div id="spring2"></div>	
+
+			<span class="css">scale(1.0, 1.5)</span>
+			<div id="spring3"></div>	
+			<div id="spring4"></div>	
+			<div id="spring5"></div>	
+			<div id="spring6"></div>	
+			<div id="spring7"></div>	
+			<div id="spring8"></div>	
+		</div>
+		<br style="clear:both;">
+		<div id="labelcontainer">
+			<div class="label">
+				<span class="labeltext">0 - 30%</span>
+			</div>
+			<div class="label" id="label2">
+				<span class="labeltext">30 - 40%</span>
+			</div>
+			
+			<div class="label" id="label3">
+				<span class="labeltext">40 - 50%</span>
+			</div>
+			<div class="label" id="label4">
+				<span class="labeltext">50 - 61%</span>
+			</div>
+			<div class="label" id="label5">
+				<span class="labeltext">61 - 72%</span>
+			</div>
+			<div class="label" id="label6">
+				<span class="labeltext">72 - 83%</span>
+			</div>
+			<div class="label" id="label7">
+				<span class="labeltext">83 - 100%</span>
+			</div>
+			
+		</div>
+	</body>
+</html>
