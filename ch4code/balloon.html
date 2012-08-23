@@ -10,6 +10,18 @@
     <script type="text/javascript" src="js/modernizr.custom.57498.js"></script>
     <link rel="stylesheet" href="css/base.css">
 <style>
+/* Warning is hidden in browsers with
+CSS Animation support */
+ .cssanimations #unsupported {
+  display:none;
+}
+
+/* If CSS Animations are NOT supported
+ display the browser warning*/
+.no-cssanimations #unsupported {
+  display:block; 
+}  
+
 @-webkit-keyframes float-lr {
 	0%, 40%, 80% { left: -100px; }
 	20%, 60%, 100% { left: 100px;}
@@ -134,10 +146,16 @@
 		</style>
 	</head>
 <body>
-	<div id="container">
-		<div id="balloon"></div>
-		<div id="balloon-tie"></div>
-		<div id="string"></div>
-	</div>
+  <div id="unsupported">
+    <h1>Your Browser does not support 
+    CSS Animations. You will not be able to see the 
+    floating balloon animation we've set up here :(
+    </h1>
+  </div>
+  <div id="container">
+    <div id="balloon"></div>
+    <div id="balloon-tie"></div>
+    <div id="string"></div>
+  </div>
 </body>
 </html>
