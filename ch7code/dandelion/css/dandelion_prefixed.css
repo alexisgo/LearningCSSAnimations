@@ -939,3 +939,6 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
  }
 
 }
+
+.warningMsg { display:none; }
+.no-csstransforms3d .warningMsg { display:block; }
