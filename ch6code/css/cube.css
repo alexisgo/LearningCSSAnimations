@@ -8,6 +8,7 @@
   -moz-perspective-origin: 50% 50%;
   -ms-perspective-origin: 50% 50%;
   -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
 
   margin-top:100px;
   margin-left:100px;
