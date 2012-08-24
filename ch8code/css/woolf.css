@@ -42,11 +42,9 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3cfc9',GradientType=0 ); /* IE6-9 */
 
   -webkit-border-bottom-right-radius: 5px 20px;
-  -moz-border-radius-bottomright:5px 20px;
   border-bottom-right-radius: 5px 20px;
 
   -webkit-border-bottom-left-radius: 5px 12px;
-  -moz-border-radius-bottomleft:5px 12px;
   border-bottom-left-radius: 5px 12px;
 }
 
