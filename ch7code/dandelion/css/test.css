@@ -361,12 +361,24 @@ div[id^="quadrant"] {
 
 }
 
-#quadrant4 {
+.no-csstransforms3d #quadrant4 {
+  /*see if using rotate instead of rotateZ has an effect in opera, ie*/
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.csstransforms3d #quadrant4 {
   -webkit-transform: rotateZ(180deg);
 	-moz-transform: rotateZ(180deg);
 	-o-transform: rotateZ(180deg);
 	-ms-transform: rotateZ(180deg);
 	transform: rotateZ(180deg);
+}
+
+#quadrant4 {
 	bottom: 382px;
 	left: 10px;
 
