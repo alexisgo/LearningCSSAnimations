@@ -196,5 +196,5 @@ quandrent itself just adjusts the rotation for all 4 seeds inside it */
   100% { -webkit-transform: rotate(-10deg) rotateX(85deg) translate3d(5px,-5px,0);} 
 }
 
-.warningMsg { display:none; }
+.warningMsg { display:none; color:white; }
 .no-csstransforms3d .warningMsg { display:block; }
