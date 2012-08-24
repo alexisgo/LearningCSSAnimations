@@ -656,9 +656,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
   -o-transition: all 1.5s;
   -ms-transition: all 1.5s;
   transition: all 1.5s;
-  background-image: url("../img/MorganSmall.png");
-  left: -112px;
-  top: -150px;
+  background-image: url("../img/MorganSmall.png") !important;
+	left: 0;
+	top: -160px;
 }
 
 .csstransforms3d #cat.scene4 {
