@@ -648,6 +648,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
   top: -150px;
 }
 
+/* If there are no transforms at all,
+  use smaller img of morgan */
+.no-csstransforms #cat.scene4 {
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+  background-image: url("../img/MorganSmall.png");
+  left: -112px;
+  top: -150px;
+}
 
 .csstransforms3d #cat.scene4 {
 	-webkit-transition: all 1.5s;
@@ -688,7 +700,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
 	transform-origin: 100% 50%;
 }
 /* ---Scene 5:  COPS! --*/
-@keyframes "foldPage1" {
+@keyframes foldPage1 {
  0% {
  }50% {
    	-webkit-transform: rotateY(74deg);
@@ -716,7 +728,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateY(10deg);
  }
 }
-@-webkit-keyframes "foldPage1" {
+@-webkit-keyframes foldPage1 {
  0% {
  }50% {
    -webkit-transform: rotateY(74deg);
@@ -727,7 +739,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateY(10deg);
  }
 }
-@-ms-keyframes "foldPage1" {
+@-ms-keyframes foldPage1 {
  0% {
  }50% {
    -ms-transform: rotateY(74deg);
@@ -738,7 +750,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateY(10deg);
  }
 }
-@-o-keyframes "foldPage1" {
+@-o-keyframes foldPage1 {
  0% {
  }50% {
    -o-transform: rotateY(74deg);
@@ -749,7 +761,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateY(10deg);
  }
 }
-@keyframes "foldPage2" {
+@keyframes foldPage2 {
  0% {
  }50% {
    	-webkit-transform: rotateY(-80deg);
@@ -777,7 +789,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateY(-30deg);
  }
 }
-@-webkit-keyframes "foldPage2" {
+@-webkit-keyframes foldPage2 {
  0% {
  }50% {
    -webkit-transform: rotateY(-80deg);
@@ -788,7 +800,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateY(-30deg);
  }
 }
-@-ms-keyframes "foldPage2" {
+@-ms-keyframes foldPage2 {
  0% {
  }50% {
    -ms-transform: rotateY(-80deg);
@@ -799,7 +811,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateY(-30deg);
  }
 }
-@-o-keyframes "foldPage2" {
+@-o-keyframes foldPage2 {
  0% {
  }50% {
    -o-transform: rotateY(-80deg);
@@ -880,7 +892,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
 	animation: knock 2s forwards 2;
 }
 
-@keyframes "knock" {
+@keyframes knock {
  0% {
  }10% {
    	-webkit-transform: rotateZ(35deg);
@@ -974,7 +986,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateZ(10deg);
  }
 }
-@-webkit-keyframes "knock" {
+@-webkit-keyframes knock {
  0% {
  }10% {
    -webkit-transform: rotateZ(35deg);
@@ -1009,7 +1021,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateZ(10deg);
  }
 }
-@-ms-keyframes "knock" {
+@-ms-keyframes knock {
  0% {
  }10% {
    -ms-transform: rotateZ(35deg);
@@ -1044,7 +1056,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
    transform: rotateZ(10deg);
  }
 }
-@-o-keyframes "knock" {
+@-o-keyframes knock {
  0% {
  }10% {
    -o-transform: rotateZ(35deg);
@@ -1155,7 +1167,7 @@ body.scene7 {
 	-o-animation: spin 1s forwards;
 	animation: spin 1s forwards;
 }
-@keyframes "spin" {
+@keyframes spin {
  0% {
     -webkit-transform: scale3d(.2,.2,.2) rotateZ(0);
    	-moz-transform: scale3d(.2,.2,.2) rotateZ(0);
@@ -1192,7 +1204,7 @@ body.scene7 {
    transform: scale3d(1,1,1) rotateZ(7200deg);
  }
 }
-@-webkit-keyframes "spin" {
+@-webkit-keyframes spin {
  0% {
    -webkit-transform: scale3d(.2,.2,.2) rotateZ(0);
    transform: scale3d(.2,.2,.2) rotateZ(0);
@@ -1206,7 +1218,7 @@ body.scene7 {
    transform: scale3d(1,1,1) rotateZ(7200deg);
  }
 }
-@-ms-keyframes "spin" {
+@-ms-keyframes spin {
  0% {
    -ms-transform: scale3d(.2,.2,.2) rotateZ(0);
    transform: scale3d(.2,.2,.2) rotateZ(0);
@@ -1220,7 +1232,7 @@ body.scene7 {
    transform: scale3d(1,1,1) rotateZ(7200deg);
  }
 }
-@-o-keyframes "spin" {
+@-o-keyframes spin {
  0% {
    -o-transform: scale3d(.2,.2,.2) rotateZ(0);
    transform: scale3d(.2,.2,.2) rotateZ(0);
