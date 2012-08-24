@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>y-axis rotations</title>
+    <style>   
+    body { font-family: Helvetica, Arial, sans-serif; }
+.container {
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 45%;
+  margin-top:10px;
+  margin-left:10px;
+  position:relative;
+  width:600px;
+  height:180px;
+  border: 1px dotted black;
+  
+  -webkit-transform-style: preserve-3d;
+  
+}
+
+.container div {
+  width:100px;
+  height:100px;
+  float:left;
+  margin:20px;
+  margin-top:30px;
+
+  background-color:red;
+}
+
+div span {
+  float:left;
+  margin-left:22px;
+}
+
+#one {
+  -webkit-transform: rotateY(0deg);
+}
+#two {
+  -webkit-transform: rotateY(45deg);
+}   
+#three {
+  -webkit-transform: rotateY(90deg);
+}
+#four {
+  -webkit-transform: rotateY(135deg);
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+     <div id="one">
+     </div>
+     <div id="two">
+     </div>
+     <div id="three">
+     </div>
+     <div id="four">
+     </div>
+     <span>rotateY(0deg)</span>
+     <span style="margin-left:40px;">rotateY(45deg)</span>
+     <span style="margin-left:40px;">rotateY(90deg)</span>
+     <span style="margin-left:25px;">rotateY(135deg)</span>
+
+  </div>
+
+</body>
+</html>

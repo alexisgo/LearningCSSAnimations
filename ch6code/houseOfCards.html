@@ -213,23 +213,30 @@
 #bottomrow .secondcol {  left: 100px; }
 #bottomrow .left.secondcol { left: 80px; }
 #bottomrow .right.secondcol { left: 120px; }
+
+.warningMsg { display:none; }
+.no-csstransforms3d .warningMsg { display:block; }
 		</style>
 	</head>
 	<body>
-    <section id="stage">
-      <section id="toprow">
+	  <div class="warningMsg">
+      <h2>Your Browser does not support CSS 3D Transforms,
+        So you will not be able to see the effects on this page :(</h2>
+    </div>  
+    <div id="stage">
+      <div id="toprow">
     		<div class="card left"></div>
     		<div class="card right"></div>
     		<div class="card flat"></div>
-      </section>
-      <section id="bottomrow">
+      </div>
+      <div id="bottomrow">
     		<div class="card left"></div>
     		<div class="card right"></div>
     		<div class="card flat"></div>
     		<div class="card left secondcol"></div>
     		<div class="card right secondcol"></div>
     		<div class="card flat secondcol"></div>
-      </section>
-    </section>
+      </div>
+    </div>
 	</body>
 </html>

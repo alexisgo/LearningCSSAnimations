@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>CUBE!</title>
+    <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <style>   
+.container {
+  float:left;
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 50%;
+  margin-top:10px;
+  margin-left:10px;
+  position:relative;
+  width:400px;
+  height:400px;
+  border: 1px dotted black;
+}
+
+.container span {
+  font-size:2em;
+  width: 100px;
+  position:absolute;
+  top:420px;
+  left: 160px;
+}
+.cube { 
+   position:absolute;
+   width: 200px;
+   height: 200px;
+   -webkit-transform-style: preserve-3d;
+
+}
+
+div[id*="cube"] {
+  -webkit-backface-visibility:visibility;
+  
+  position: absolute;
+  top:100px;
+  left:100px;
+  opacity:0.7;
+  width:100%;
+  height:100%;
+} 
+
+/*
+  the translateZ number needs to be one half the width
+  of the cube's height/width
+*/
+
+/* without the translateZ we can't see it...because it's now perpendicular and
+completely flat. Try chaning translateZ to 10 to see  */
+#cubetop {
+  background-color:purple;
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+}
+#cuberight {
+  background-color:orange;
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+}   
+#cubebottom {
+  background-color:red;
+  -webkit-transform: rotateX(90deg) translateZ(-100px);
+}
+#cubeleft {
+ background-color:green;
+  -webkit-transform: rotateY(90deg) translateZ(-100px);
+}
+#cubefront {
+  background-color:transparent; 
+  -webkit-transform: translateZ(100px);
+
+}
+#cubeback {
+  background-color:blue;
+  -webkit-transform: translateZ(-100px);
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+     <div class="cube" >
+       <div id="cubetop"></div>
+        <div id="cuberight"></div>
+        <div id="cubebottom"></div>
+        <div id="cubeleft"></div>
+        <div id="cubefront"></div>
+        <div id="cubeback"></div>
+     </div>
+     <span>800px</span>
+  </div>
+  <div class="container" style="-webkit-perspective: 400px;">
+     <div class="cube" >
+       <div id="cubetop"></div>
+        <div id="cuberight"></div>
+        <div id="cubebottom"></div>
+        <div id="cubeleft"></div>
+        <div id="cubefront"></div>
+        <div id="cubeback"></div>
+     </div>
+     <span>400px</span>
+  </div>
+  <div class="container" style="-webkit-perspective: 200px;">
+     <div class="cube" >
+       <div id="cubetop"></div>
+        <div id="cuberight"></div>
+        <div id="cubebottom"></div>
+        <div id="cubeleft"></div>
+        <div id="cubefront"></div>
+        <div id="cubeback"></div>
+     </div>
+     <span>200px</span>
+  </div>
+  <div class="container" style="-webkit-perspective: 0px;">
+     <div class="cube" >
+       <div id="cubetop"></div>
+        <div id="cuberight"></div>
+        <div id="cubebottom"></div>
+        <div id="cubeleft"></div>
+        <div id="cubefront"></div>
+        <div id="cubeback"></div>
+     </div>
+      <span style="left:180px;">0px</span>
+  </div>
+</body>
+</html>
