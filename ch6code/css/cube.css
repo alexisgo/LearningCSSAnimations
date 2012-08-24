@@ -96,3 +96,6 @@
       -ms-transform: translateZ(-100px);
           transform: translateZ(-100px);
 }
+
+.warningMsg { display:none; }
+.no-csstransforms3d .warningMsg { display:block; }
