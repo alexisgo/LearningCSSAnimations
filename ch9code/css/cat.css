@@ -274,7 +274,7 @@ directions --*/
 	left: 182px;
 }
 /* --SCENE 2:  Reading the Paper --*/
-@keyframes "reading" {
+@keyframes reading {
  0% {
  }30% {
    	-webkit-transform: translate3d(-3px,2px,0);
@@ -324,7 +324,7 @@ directions --*/
    transform: translate3d(3px,2px,0);
  }
 }
-@-webkit-keyframes "reading" {
+@-webkit-keyframes reading {
  0% {
  }30% {
    -webkit-transform: translate3d(-3px,2px,0);
@@ -362,7 +362,7 @@ directions --*/
    transform: translate3d(3px,2px,0);
  }
 }
-@-o-keyframes "reading" {
+@-o-keyframes reading {
  0% {
  }30% {
    -o-transform: translate3d(-3px,2px,0);
@@ -408,7 +408,7 @@ directions --*/
 	-ms-transform: rotateY(-30deg);
 	transform: rotateY(-30deg);
 }
-@keyframes "readingPage2" {
+@keyframes readingPage2 {
  0% {
     -webkit-transform: translate3d(-5px,3px,0);
    	-moz-transform: translate3d(-5px,3px,0);
@@ -467,7 +467,7 @@ directions --*/
    transform: translate3d(-5px,3px,0);
  }
 }
-@-webkit-keyframes "readingPage2" {
+@-webkit-keyframes readingPage2 {
  0% {
    -webkit-transform: translate3d(-5px,3px,0);
    transform: translate3d(-5px,3px,0);
@@ -489,7 +489,7 @@ directions --*/
    transform: translate3d(-5px,3px,0);
  }
 }
-@-ms-keyframes "readingPage2" {
+@-ms-keyframes readingPage2 {
  0% {
    -ms-transform: translate3d(-5px,3px,0);
    transform: translate3d(-5px,3px,0);
@@ -511,7 +511,7 @@ directions --*/
    transform: translate3d(-5px,3px,0);
  }
 }
-@-o-keyframes "readingPage2" {
+@-o-keyframes readingPage2 {
  0% {
    -o-transform: translate3d(-5px,3px,0);
    transform: translate3d(-5px,3px,0);
@@ -1146,6 +1146,7 @@ body.scene7 {
 	background-image: -ms-radial-gradient(center top, circle cover, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.9)), -ms-linear-gradient(150px 0px, rgba(0, 0, 0, 0.15), transparent);
 	background-image: radial-gradient(center top, circle cover, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.9)), linear-gradient(150px 0px, rgba(0, 0, 0, 0.15), transparent);
 }
+
 #newsreel.scene7 {
 	display: block;
 	-webkit-animation: spin 1s forwards;
@@ -1233,3 +1234,4 @@ body.scene7 {
    transform: scale3d(1,1,1) rotateZ(7200deg);
  }
 }
+
