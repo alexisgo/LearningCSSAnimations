@@ -119,3 +119,6 @@
   position:absolute;
   bottom: -100px;
 }
+
+.warningMsg { display:none; }
+.no-csstransforms3d .warningMsg { display:block; }
