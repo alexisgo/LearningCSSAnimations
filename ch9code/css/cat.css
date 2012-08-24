@@ -648,19 +648,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffff', end
   top: -150px;
 }
 
-/* If there are no transforms at all,
-  use smaller img of morgan */
-.no-csstransforms #cat.scene4 {
-  -webkit-transition: all 1.5s;
-  -moz-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  -ms-transition: all 1.5s;
-  transition: all 1.5s;
-  background-image: url("../img/MorganSmall.png") !important;
-	left: 0;
-	top: -160px;
-}
-
 .csstransforms3d #cat.scene4 {
 	-webkit-transition: all 1.5s;
 	-moz-transition: all 1.5s;
