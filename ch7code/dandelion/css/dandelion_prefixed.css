@@ -11,7 +11,7 @@ body {
 	border-bottom: 5px solid rgba(255,255,255,0.3);
 }
 
-@keyframes "stemBlow" {
+@keyframes stemBlow {
  0% {
  }7% {
    	-webkit-transform: rotate(18deg);
@@ -76,7 +76,7 @@ body {
 
 }
 
-@-webkit-keyframes "stemBlow" {
+@-webkit-keyframes stemBlow {
  0% {
  }7% {
    -webkit-transform: rotate(18deg);
@@ -101,7 +101,7 @@ body {
 
 }
 
-@-ms-keyframes "stemBlow" {
+@-ms-keyframes stemBlow {
  0% {
  }7% {
    -ms-transform: rotate(18deg);
@@ -126,7 +126,7 @@ body {
 
 }
 
-@-o-keyframes "stemBlow" {
+@-o-keyframes stemBlow {
  0% {
  }7% {
    -o-transform: rotate(18deg);
@@ -186,7 +186,7 @@ body {
 	background-color: white;
 }
 
-@keyframes "blowRight" {
+@keyframes blowRight {
  0% {
  }7% {
    	left: 290px;
@@ -208,7 +208,7 @@ body {
 
 }
 
-@-webkit-keyframes "blowRight" {
+@-webkit-keyframes blowRight {
  0% {
  }7% {
    left: 290px;
@@ -219,7 +219,7 @@ body {
 
 }
 
-@-o-keyframes "blowRight" {
+@-o-keyframes blowRight {
  0% {
  }7% {
    left: 290px;
@@ -249,7 +249,7 @@ div[id^="quadrant"] {
 	animation: blowRight 6s forwards ease-in;
 }
 
-@keyframes "blowRightQuad2" {
+@keyframes blowRightQuad2 {
  0% {
  }7% {
    	left: 190px;
@@ -271,7 +271,7 @@ div[id^="quadrant"] {
 
 }
 
-@-webkit-keyframes "blowRightQuad2" {
+@-webkit-keyframes blowRightQuad2 {
  0% {
  }7% {
    left: 190px;
@@ -282,7 +282,7 @@ div[id^="quadrant"] {
 
 }
 
-@-o-keyframes "blowRightQuad2" {
+@-o-keyframes blowRightQuad2 {
  0% {
  }7% {
    left: 190px;
@@ -318,7 +318,7 @@ div[id^="quadrant"] {
 	left: 171px;
 }
 
-@keyframes "blowRightQuad4" {
+@keyframes blowRightQuad4 {
  0% {
  }7% {
    	left: 140px;
@@ -340,7 +340,7 @@ div[id^="quadrant"] {
 
 }
 
-@-webkit-keyframes "blowRightQuad4" {
+@-webkit-keyframes blowRightQuad4 {
  0% {
  }7% {
    left: 140px;
@@ -351,7 +351,7 @@ div[id^="quadrant"] {
 
 }
 
-@-o-keyframes "blowRightQuad4" {
+@-o-keyframes blowRightQuad4 {
  0% {
  }7% {
    left: 140px;
@@ -484,7 +484,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 	animation: blowRight 6s forwards ease-in-out;
 }
 
-@keyframes "flip" {
+@keyframes flip {
  0% {
     -webkit-transform-origin: 50% 50%;
    	-moz-transform-origin: 50% 50%;
@@ -525,7 +525,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-webkit-keyframes "flip" {
+@-webkit-keyframes flip {
  0% {
    -webkit-transform-origin: 50% 50%;
    transform-origin: 50% 50%;
@@ -541,7 +541,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-o-keyframes "flip" {
+@-o-keyframes flip {
  0% {
    -o-transform-origin: 50% 50%;
    transform-origin: 50% 50%;
@@ -570,7 +570,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 	animation: flip 6s forwards ease-in-out;
 }
 
-@keyframes "zoomSeed" {
+@keyframes zoomSeed {
  0% {
  }100% {
    	-webkit-transform: scale3d(3,3,3) translate3d(0,-105px,0) rotateZ(-120deg);
@@ -591,7 +591,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-webkit-keyframes "zoomSeed" {
+@-webkit-keyframes zoomSeed {
  0% {
  }100% {
    -webkit-transform: scale3d(3,3,3) translate3d(0,-105px,0) rotateZ(-120deg);
@@ -600,7 +600,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-o-keyframes "zoomSeed" {
+@-o-keyframes zoomSeed {
  0% {
  }100% {
    -o-transform: scale3d(3,3,3) translate3d(0,-105px,0) rotateZ(-120deg);
@@ -622,7 +622,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 	transform: rotate(-80deg);
 }
 
-@keyframes "float" {
+@keyframes float {
  0% {
     -webkit-transform-origin: 50% 100%;
    	-moz-transform-origin: 50% 100%;
@@ -669,7 +669,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-webkit-keyframes "float" {
+@-webkit-keyframes float {
  0% {
    -webkit-transform-origin: 50% 100%;
    transform-origin: 50% 100%;
@@ -687,7 +687,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-o-keyframes "float" {
+@-o-keyframes float {
  0% {
    -o-transform-origin: 50% 100%;
    transform-origin: 50% 100%;
@@ -712,7 +712,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 	animation: float 6s forwards ease-in-out;
 }
 
-@keyframes "seedChange1" {
+@keyframes seedChange1 {
  0% {
  }100% {
    	-webkit-transform: rotateZ(60deg) translate3d(5px,-15px,0);
@@ -733,7 +733,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-webkit-keyframes "seedChange1" {
+@-webkit-keyframes seedChange1 {
  0% {
  }100% {
    -webkit-transform: rotateZ(60deg) translate3d(5px,-15px,0);
@@ -742,7 +742,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-o-keyframes "seedChange1" {
+@-o-keyframes seedChange1 {
  0% {
  }100% {
    -o-transform: rotateZ(60deg) translate3d(5px,-15px,0);
@@ -751,7 +751,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@keyframes "seedChange2" {
+@keyframes seedChange2 {
  0% {
  }100% {
    	-webkit-transform: rotateZ(40deg) translate3d(5px,5px,0);
@@ -772,7 +772,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-webkit-keyframes "seedChange2" {
+@-webkit-keyframes seedChange2 {
  0% {
  }100% {
    -webkit-transform: rotateZ(40deg) translate3d(5px,5px,0);
@@ -781,7 +781,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-o-keyframes "seedChange2" {
+@-o-keyframes seedChange2 {
  0% {
  }100% {
    -o-transform: rotateZ(40deg) translate3d(5px,5px,0);
@@ -790,7 +790,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@keyframes "seedChange3" {
+@keyframes seedChange3 {
  0% {
  }100% {
    	-webkit-transform: rotateZ(20deg) translate3d(50px,-5px,0);
@@ -811,7 +811,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-webkit-keyframes "seedChange3" {
+@-webkit-keyframes seedChange3 {
  0% {
  }100% {
    -webkit-transform: rotateZ(20deg) translate3d(50px,-5px,0);
@@ -820,7 +820,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-o-keyframes "seedChange3" {
+@-o-keyframes seedChange3 {
  0% {
  }100% {
    -o-transform: rotateZ(20deg) translate3d(50px,-5px,0);
@@ -829,7 +829,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@keyframes "seedChange4" {
+@keyframes seedChange4 {
  0% {
  }100% {
    	-webkit-transform: rotateZ(10deg) translate3d(5px,-5px,0);
@@ -850,7 +850,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-webkit-keyframes "seedChange4" {
+@-webkit-keyframes seedChange4 {
  0% {
  }100% {
    -webkit-transform: rotateZ(10deg) translate3d(5px,-5px,0);
@@ -859,7 +859,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-o-keyframes "seedChange4" {
+@-o-keyframes seedChange4 {
  0% {
  }100% {
    -o-transform: rotateZ(10deg) translate3d(5px,-5px,0);
@@ -868,7 +868,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@keyframes "seedChange5" {
+@keyframes seedChange5 {
  0% {
     -webkit-transform-origin: 100% 50%;
    	-moz-transform-origin: 100% 50%;
@@ -909,7 +909,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-webkit-keyframes "seedChange5" {
+@-webkit-keyframes seedChange5 {
  0% {
    -webkit-transform-origin: 100% 50%;
    transform-origin: 100% 50%;
@@ -925,7 +925,7 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 }
 
-@-o-keyframes "seedChange5" {
+@-o-keyframes seedChange5 {
  0% {
    -o-transform-origin: 100% 50%;
    transform-origin: 100% 50%;
