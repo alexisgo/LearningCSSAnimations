@@ -168,7 +168,6 @@ body {
 
 	-webkit-animation: stemBlow 6s forwards ease-in;
 	-moz-animation: stemBlow 6s forwards ease-in;
-	-ms-animation: stemBlow 6s forwards ease-in;
 	-o-animation: stemBlow 6s forwards ease-in;
 	animation: stemBlow 6s forwards ease-in;
 }
@@ -363,7 +362,7 @@ div[id^="quadrant"] {
 }
 
 #quadrant4 {
-	-webkit-transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
 	-moz-transform: rotateZ(180deg);
 	-o-transform: rotateZ(180deg);
 	-ms-transform: rotateZ(180deg);
