@@ -1,0 +1,51 @@
+#unsupportedBrowser, #unsupportedBrowser.hide { display:none; }
+
+#unsupportedBrowser ul li {
+  display: inline;
+  list-style-type:none;
+  padding: 0 10px;
+}
+
+#unsupportedBrowser ul  { margin:5px; } 
+
+.no-keyframes #unsupportedBrowser,
+.no-cssanimations #unsupportedBrowser,
+.no-csstransforms #unsupportedBrowser,
+.no-csstransitions #unsupportedBrowser 
+{
+  display:block;
+  text-align:center;
+  width: 100%;
+  font-size:0.8em;
+  padding:10px;
+  background-color: rgb(15,70,131);
+  color:white;
+
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+     -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+          box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+#unsupportedBrowser a { color:white; font-weight:bold; }
+
+#unsupportedBrowser #dismiss {
+  background-color: rgb(242,242,242);
+  width: 25px;
+  height:25px;
+  color:red;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+     -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+          box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+  position:absolute; 
+  right: 3%;
+  top: 2%;
+  margin-left: 100px;
+  font-size:1.2em;
+} 
+
+#warningText { margin:0 10%; }
