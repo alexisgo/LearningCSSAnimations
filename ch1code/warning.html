@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>TITLE</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+  <div id="unsupportedBrowser">
+    <div id="dismiss">
+      <span>x</span>
+    </div>
+    <div id="warningText">
+      Oh no! Your browser doesn't support CSS3 animations! Please download one of the following modern
+      browsers in order to see what you're missing! 
+
+      <ul>
+        <li><a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a></li>
+        <li><a href="http://www.google.com/chrome">Chrome</a></li>
+        <li><a href="http://www.apple.com/safari/download/">Safari</a></li>
+        <li><a href="http://www.opera.com/">Opera</a></li>
+        <li><a href="http://ie.microsoft.com/testdrive/">IE 10</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h1>YOYOYOYOYOYO</h1>
+  
+  <script type="text/javascript">
+  window.onload = setup;
+  
+  function setup(){
+    var dismiss = document.getElementById("dismiss");
+    dismiss.onclick = hide;
+  }
+  function hide() {
+    document.getElementById("unsupportedBrowser").className = "hide";
+  }
+  </script>
+</body>
+</html>
