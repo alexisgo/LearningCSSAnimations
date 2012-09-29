@@ -41,66 +41,30 @@
   
 }
 
-@-webkit-keyframes robotMove {
-  0% {  -webkit-transform: translateY(0px);}
-  50% { -webkit-transform: translateY(5px);}
-  100% { -webkit-transform: translateY(0px);}
-}
 
-@-moz-keyframes robotMove {
-  0%   { -moz-transform: translateY(0px); }
-  50%  { -moz-transform: translateY(5px); }
-  100% { -moz-transform: translateY(0px); }
-}
-@-ms-keyframes robotMove {
-  0%   { -ms-transform: translateY(0px); }
-  50%  { -ms-transform: translateY(5px); }
-  100% { -ms-transform: translateY(0px); }
-}
-@-o-keyframes robotMove {
-  0%   { -o-transform: translateY(0px); }
-  50%  { -o-transform: translateY(5px); }
-  100% { -o-transform: translateY(0px); }
-}
-
-#robot {        
-  width:150px;
-  height:295px;
-  background-image:url('img/robotoCropo150.png');
-
-  position:absolute;
-  left: 100px;
-  top: 230px;
-  z-index: 3;
   
-  -webkit-animation: robotMove 1s linear infinite;
-     -moz-animation: robotMove 1s linear infinite; /* FF5+ */
-      -ms-animation: robotMove 1s linear infinite; /* IE10 */
-       -o-animation: robotMove 1s linear infinite; /* Opera 12+ */
+@-webkit-keyframes tumbleweed {
+    0% {  }
+    100% {  
+        /* ends off to the left of the containing element */
+        left: -60px; 
+        /* rotate the tumbleweed 3 full 360 degree turns, in 
+        the counter-clockwise direction */
+        -webkit-transform:  rotate(-1080deg);
+    }
 }
-  
-  @-webkit-keyframes tumbleweed {
-      0% {  }
-      100% {  
-          /* ends off to the left of the containing element */
-          left: -60px; 
-          /* rotate the tumbleweed 3 full 360 degree turns, in 
-          the counter-clockwise direction */
-          -webkit-transform:  rotate(-1080deg);
-      }
-  }
-  @-moz-keyframes tumbleweed {
-      0% {  }
-      100% {  left: -60px; -moz-transform:  rotate(-1080deg);  }
-  }
-  @-ms-keyframes tumbleweed {
-      0% {  }
-      100% {   left: -60px; -ms-transform:  rotate(-1080deg); }
-  }
-  @-o-keyframes tumbleweed {
-      0% {  }
-      100% {  left: -60px; -o-transform:  rotate(-1080deg); }
-  }
+@-moz-keyframes tumbleweed {
+    0% {  }
+    100% {  left: -60px; -moz-transform:  rotate(-1080deg);  }
+}
+@-ms-keyframes tumbleweed {
+    0% {  }
+    100% {   left: -60px; -ms-transform:  rotate(-1080deg); }
+}
+@-o-keyframes tumbleweed {
+    0% {  }
+    100% {  left: -60px; -o-transform:  rotate(-1080deg); }
+}
       
 #tumbleweed {
   width: 50px;
@@ -112,9 +76,6 @@
   left: 400px;
   z-index: 2;
   
-  /* cannot for the life of me figure out why the animaition delay
-  isn't applying in subsequent runs. Code from this site works:
-  file:///Users/alexisgoldstein/Downloads/css3-3d-transform/demo1/index.html */
   -webkit-animation:  tumbleweed 5s ease-in 1s infinite;
      -moz-animation:  tumbleweed 5s ease-in 1s infinite;
       -ms-animation:  tumbleweed 5s ease-in 1s infinite;
@@ -167,6 +128,44 @@
   -moz-animation: shadow 5s ease-in 1s infinite;  
   -ms-animation: shadow 5s ease-in 1s infinite;  
   -o-animation: shadow 5s ease-in 1s infinite;  
+}
+
+@-webkit-keyframes robotMove {
+  0% {  -webkit-transform: translateY(0px);}
+  50% { -webkit-transform: translateY(5px);}
+  100% { -webkit-transform: translateY(0px);}
+}
+
+@-moz-keyframes robotMove {
+  0%   { -moz-transform: translateY(0px); }
+  50%  { -moz-transform: translateY(5px); }
+  100% { -moz-transform: translateY(0px); }
+}
+@-ms-keyframes robotMove {
+  0%   { -ms-transform: translateY(0px); }
+  50%  { -ms-transform: translateY(5px); }
+  100% { -ms-transform: translateY(0px); }
+}
+@-o-keyframes robotMove {
+  0%   { -o-transform: translateY(0px); }
+  50%  { -o-transform: translateY(5px); }
+  100% { -o-transform: translateY(0px); }
+}
+
+#robot {        
+  width:150px;
+  height:295px;
+  background-image:url('img/robotoCropo150.png');
+
+  position:absolute;
+  left: 100px;
+  top: 230px;
+  z-index: 3;
+  
+  -webkit-animation: robotMove 1s linear infinite;
+     -moz-animation: robotMove 1s linear infinite; /* FF5+ */
+      -ms-animation: robotMove 1s linear infinite; /* IE10 */
+       -o-animation: robotMove 1s linear infinite; /* Opera 12+ */
 }
   </style>
 </head>
