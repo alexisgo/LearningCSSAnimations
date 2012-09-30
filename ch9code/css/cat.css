@@ -535,6 +535,7 @@ directions --*/
 body.scene4 {
 	background: rgb(249,249,249); /* Old browsers */
 background: -webkit-radial-gradient(center, ellipse cover, rgba(249,249,249,1) 0%, rgba(184,198,223,1) 61%, rgba(135,152,181,1) 99%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(249,249,249,1)), color-stop(61%,rgba(184,198,223,1)), color-stop(99%,rgba(135,152,181,1))); /* Chrome,Safari4+ */
 	background: -moz-radial-gradient(center, ellipse cover, rgba(249,249,249,1) 0%, rgba(184,198,223,1) 61%, rgba(135,152,181,1) 99%);
 	background: -o-radial-gradient(center, ellipse cover, rgba(249,249,249,1) 0%, rgba(184,198,223,1) 61%, rgba(135,152,181,1) 99%);
 	background: -ms-radial-gradient(center, ellipse cover, rgba(249,249,249,1) 0%, rgba(184,198,223,1) 61%, rgba(135,152,181,1) 99%);
