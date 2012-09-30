@@ -45,24 +45,24 @@
   		color-stop(.75, rgba(255, 255, 255, 0)), 
   		color-stop(1, rgba(255, 255, 255, 0)));
   	background-image:	/* Chrome and Webkit Nightly build */
-  		-webkit-linear-gradient(135deg,
-  				rgba(255, 255, 255, 0.2) 25%, 
-  				rgba(255, 255, 255, 0) 25%,
-  				rgba(255, 255, 255, 0) 50%, 
-  				rgba(255, 255, 255, 0.2) 50%, 
-  				rgba(255, 255, 255, 0.2) 75%,
-  				rgba(255, 255, 255, 0) 75%,
-  				rgba(255, 255, 255, 0) 100%
-    				),
-  			-webkit-linear-gradient(45deg,
-  				rgba(255, 255, 255, 0.2) 25%, 
-  				rgba(255, 255, 255, 0) 25%,
-  				rgba(255, 255, 255, 0) 50%, 
-  				rgba(255, 255, 255, 0.2) 50%, 
-  				rgba(255, 255, 255, 0.2) 75%,
-  				rgba(255, 255, 255, 0) 75%,
-  				rgba(255, 255, 255, 0) 100%
-    				);;
+  -webkit-linear-gradient(135deg,
+    rgba(255, 255, 255, 0.2) 25%, 
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0) 50%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0) 100%
+    ),
+  -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, 0.2) 25%, 
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0) 50%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
   	background-image:	/* Firefox */
   		-moz-linear-gradient(135deg,
   				rgba(255, 255, 255, 0.2) 25%, 
