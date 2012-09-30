@@ -60,6 +60,12 @@ body {
   position:absolute; 
 }
 
+@-webkit-keyframes blowRight {
+  0% {  } 
+  7% {  left:290px; }
+  100% { left:1600px; }
+}
+
 #looseSeeds {
   position:absolute;
   bottom: 442px;
@@ -67,10 +73,36 @@ body {
   -webkit-animation: blowRight 6s forwards ease-in-out;
 }
 
-@-webkit-keyframes blowRight {
-  0% {  } 
-  7% {  left:290px; }
-  100% { left:1600px; }
+@-webkit-keyframes zoomSeed {
+  0% { }
+  100% { -webkit-transform:scale3d(3,3,3) translate3d(0,-105px,0) rotate(-120deg);}
+}
+
+#zoomseed {
+  -webkit-animation: zoomSeed 6s forwards;
+  -webkit-transform: rotate(-80deg);
+  
+}
+ 
+ @-webkit-keyframes float {
+   0% { -webkit-transform-origin: 50% 100%; -webkit-animation-timing-function: ease-in;} 
+   7% { -webkit-transform: translate3d(0, 15px, 0) rotate(15deg);}
+   100% { -webkit-transform: scale3d(4,4,4) rotate(120deg) translate3d(-330px, 10px, 0); }
+ }
+  
+#floatupseed {
+  -webkit-animation: float 6s forwards ease-in-out;
+}
+
+@-webkit-keyframes flip {
+  0% { -webkit-transform-origin: 50% 50%; } 
+  7% { -webkit-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg); }
+  100% { -webkit-transform: rotateX(160deg); }
+}
+
+#flipseed {
+  -webkit-transform: rotate(-190deg);
+  -webkit-animation: flip 6s forwards ease-in-out; 
 }
 
 div[id^="quadrant"] {
@@ -143,38 +175,6 @@ quandrent itself just adjusts the rotation for all 4 seeds inside it */
 .quad div:nth-of-type(5) {
     -webkit-animation: seedChange5 6s;
     -webkit-transform:rotate(-100deg) translate3d(-5px,-5px,0);
-}
-
-@-webkit-keyframes flip {
-  0% { -webkit-transform-origin: 50% 50%; } 
-  7% { -webkit-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg); }
-  100% { -webkit-transform: rotateX(160deg); }
-}
-
-#flipseed {
-  -webkit-transform: rotate(-190deg);
-  -webkit-animation: flip 6s forwards ease-in-out; 
-}
-
-@-webkit-keyframes zoomSeed {
-  0% { }
-  100% { -webkit-transform:scale3d(3,3,3) translate3d(0,-105px,0) rotate(-120deg);}
-}
-
-#zoomseed {
-  -webkit-animation: zoomSeed 6s forwards;
-  -webkit-transform: rotate(-80deg);
-  
-}
- 
- @-webkit-keyframes float {
-   0% { -webkit-transform-origin: 50% 100%; -webkit-animation-timing-function: ease-in;} 
-   7% { -webkit-transform: translate3d(0, 15px, 0) rotate(15deg);}
-   100% { -webkit-transform: scale3d(4,4,4) rotate(120deg) translate3d(-330px, 10px, 0); }
- }
-  
-#floatupseed {
-  -webkit-animation: float 6s forwards ease-in-out;
 }
 
 @-webkit-keyframes seedChange1 { 
