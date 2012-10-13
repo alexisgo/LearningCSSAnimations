@@ -1,13 +1,13 @@
 /* If CSS3 Transforms are supported
  do not display the browser warning*/
 .csstransforms #unsupported {
-  display:none;
+  display: none;
 }
 
 /* If CSS3 Transforms are NOT supported
  display the browser warning*/
 .no-csstransforms #unsupported {
-  display:block;
+  display: block;
 }
 
 .no-csstransforms #unsupported img {
@@ -16,14 +16,14 @@
 
 /* hide bike if CSS3 transforms are not supported */
 .no-csstransforms #bike {
-  display:none;
+  display: none;
 }
 
 #bike {
   width: 400px;
   height: 250px;
   position: relative;
-  margin: 20px 0px;
+  margin: 20px 0;
 } 
 
 #bike div[id*="frame"] {  		
@@ -91,11 +91,11 @@
 }
 
 #seat {
-  background-color:black;
+  background-color: black;
   position: absolute;
   left: 135px;
 
-  z-index:3;
+  z-index: 3;
   -webkit-border-radius: 20px; 
   -moz-border-radius: 20px; 
       border-radius: 20px; 
@@ -107,11 +107,11 @@
 }
 
 #nose {
-  background-color:black;
+  background-color: black;
   width: 40px;
   height: 15px;
-  position:absolute;
-  top:0px;
+  position: absolute;
+  top: 0;
   left: 20px; 
 
   -webkit-border-bottom-right-radius: 15px; 
@@ -121,23 +121,23 @@
 
 .handlebars {
   position: relative;
-  left:310px;
+  left: 310px;
 }
 
 #post {
   background-color: silver;
   height: 10px;
   width: 10px;
-  position:absolute;
+  position: absolute;
   top: 10px;
 }
 
 #bar, #handle {
-  position:absolute;
-  top:5px;
+  position: absolute;
+  top: 5px;
   width: 50px;
   height: 10px;
-  background-color:silver;
+  background-color: silver;
 
   -webkit-border-radius: 20px; 
   -moz-border-radius: 20px; 
@@ -159,7 +159,7 @@
 #handle {
   background-color: black;
   width: 25px;
-  height:12px;
+  height: 12px;
 
   -webkit-transform: rotate(-20deg) translateX(25px);  
   -moz-transform: rotate(-20deg) translateX(25px);  
@@ -177,7 +177,7 @@
 
   /* using border-radius: 50% doesn't work in certain
      versions of mobile Safari, so we're using absolute
-     pixel values first, and if 50% isnt' understood, these
+     pixel values first, and if 50% isn't understood, these
      absolulte values will be used. */
     -webkit-border-radius: 70px; 
     -moz-border-radius: 70px; 
@@ -199,8 +199,8 @@
 div[class*="spoke"] {
   height: 1px;
   width: 62px;
-  background-color:black;
-  position:absolute;
+  background-color: black;
+  position: absolute;
   top: 60px;
 
   -webkit-transform-origin: 100% 50%;  

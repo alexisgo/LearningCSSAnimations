@@ -1,20 +1,20 @@
 /* If CSS3 Transforms are supported
  do not display the browser warning*/
 .csstransforms #unsupported {
-  display:none;
+  display: none;
 }
 
 /* If CSS3 Transforms are NOT supported
  display the browser warning*/
 .no-csstransforms #unsupported {
-  display:block;
+  display: block;
 }
 
 .box {
   width: 150px;
   height: 150px;
   background-color: rgb(211,211,211);
-  color:white;
+  color: white;
   margin: 100px 0;
 }
 
