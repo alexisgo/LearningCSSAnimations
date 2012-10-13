@@ -29,7 +29,7 @@
 #animation {
   width: 100px;
   height: 100px;
-  background-color:black;
+  background-color: black;
 
   -webkit-animation-name: rangeOfGrays;
   -moz-animation-name: rangeOfGrays;
