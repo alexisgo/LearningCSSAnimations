@@ -490,13 +490,19 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
    	-o-transform-origin: 50% 50%;
    	-ms-transform-origin: 50% 50%;
    	transform-origin: 50% 50%;
+   	
+   	-webkit-transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+       	-moz-transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+       	-o-transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+       	-ms-transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+       	transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
  }
  7% {
-    -webkit-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
-   	-moz-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
-   	-o-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
-   	-ms-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
-   	transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
+    -webkit-transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+   	-moz-transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+   	-o-transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+   	-ms-transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+   	transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
  }
  100% {
     -webkit-transform: rotateX(160deg);
@@ -510,14 +516,17 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 @-moz-keyframes flip {
  0% {
-   -moz-transform-origin: 50% 50%;
-   transform-origin: 50% 50%;
- }
- 7% {
-   -moz-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
-   transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
- }
- 100% {
+     -moz-transform-origin: 50% 50%;
+     transform-origin: 50% 50%;
+
+     -moz-transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+     transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+   }
+   7% {
+     -moz-transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+     transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+   }
+  100% {
    -moz-transform: rotateX(160deg);
    transform: rotateX(160deg);
  }
@@ -528,11 +537,15 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
  0% {
    -webkit-transform-origin: 50% 50%;
    transform-origin: 50% 50%;
- }
- 7% {
-   -webkit-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
-   transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
- }
+   
+     -webkit-transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+     transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+   }
+   7% {
+     -webkit-transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+     transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+   }
+    
  100% {
    -webkit-transform: rotateX(160deg);
    transform: rotateX(160deg);
@@ -542,13 +555,17 @@ then the quandrent itself just adjusts the rotation for all 4 seeds inside it */
 
 @-o-keyframes flip {
  0% {
-   -o-transform-origin: 50% 50%;
-   transform-origin: 50% 50%;
- }
- 7% {
-   -o-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
-   transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg);
- }
+     -o-transform-origin: 50% 50%;
+     transform-origin: 50% 50%;
+   
+     -o-transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+     transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+   }
+   7% {
+     -o-transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+     transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg);
+   }
+   
  100% {
    -o-transform: rotateX(160deg);
    transform: rotateX(160deg);
