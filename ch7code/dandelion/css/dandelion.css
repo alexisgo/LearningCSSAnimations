@@ -95,14 +95,18 @@ body {
 }
 
 @-webkit-keyframes flip {
-  0% { -webkit-transform-origin: 50% 50%; } 
-  7% { -webkit-transform: translate3d(0, 25px, 0) rotateX(5deg) rotate(-190deg); }
+  0% { 
+    -webkit-transform-origin: 50% 50%; 
+    -webkit-transform: translate3d(-12px, 85px, 0) rotateX(5deg) rotate(-190deg);
+  } 
+  7% { -webkit-transform: translate3d(0, 75px, 0) rotateX(5deg) rotate(-190deg); }
+    
   100% { -webkit-transform: rotateX(160deg); }
 }
 
 #flipseed {
   -webkit-transform: rotate(-190deg);
-  -webkit-animation: flip 6s forwards ease-in-out; 
+  -webkit-animation: flip 6s forwards ease-in-out;
 }
 
 div[id^="quadrant"] {
