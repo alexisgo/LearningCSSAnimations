@@ -195,9 +195,12 @@ quandrent itself just adjusts the rotation for all 4 seeds inside it */
 }
 
 @-webkit-keyframes seedChange5 { 
-  0% { -webkit-transform-origin: 100% 50%; } 
-  30% { -webkit-transform: rotateX(60deg) scale3d(2,1.2,2);}
-  100% { -webkit-transform: rotate(-10deg) rotateX(85deg) translate3d(5px,-5px,0);} 
+  0% { 
+    -webkit-transform-origin: 100% 50%; 
+    -webkit-transform: rotateX(0deg) scale3d(1,1,1);
+  } 
+  30% { -webkit-transform: rotateX(0deg) scale3d(1,1,1);}
+  100% { -webkit-transform: rotate(-70deg) rotateX(-85deg) translate3d(5px,-5px,0) scale3d(2,1.2,2);} 
 }
 
 .warningMsg { display:none; color:white; }
